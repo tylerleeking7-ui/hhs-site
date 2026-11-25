@@ -1,0 +1,1749 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Honey Harvest Solutions — Your Growth. Our Craft.</title>
+<meta name="description" content="Honey Harvest Solutions — commercial cannabis facility design from concept to canopy, Grower in Residence embedded cultivation, home grow design, and elite genetics. 14+ years of commercial cultivation. Nationwide. Call 720-383-8414.">
+<meta name="theme-color" content="#0a0a0b">
+<link rel="canonical" href="https://honeyharvestsolutions.com/">
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Honey Harvest Solutions">
+<meta property="og:title" content="Honey Harvest Solutions — Your Growth. Our Craft.">
+<meta property="og:description" content="Cannabis facility design, Grower in Residence, home grow design, and genetics — from a 14-year commercial operator. Nationwide.">
+<meta property="og:url" content="https://honeyharvestsolutions.com/">
+<meta property="og:image" content="https://honeyharvestsolutions.com/images/og-cover.jpg">
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Honey Harvest Solutions — Your Growth. Our Craft.">
+<meta name="twitter:description" content="Cannabis facility design, Grower in Residence, home grow design, and genetics — from a 14-year commercial operator. Nationwide.">
+<meta name="twitter:image" content="https://honeyharvestsolutions.com/images/og-cover.jpg">
+<!-- Favicon: gold hexagon -->
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%230a0a0b'/%3E%3Cpath d='M32 8l20 12v24L32 56 12 44V20z' fill='none' stroke='%23d9b45a' stroke-width='3'/%3E%3Cpath d='M32 20l10 6v12l-10 6-10-6V26z' fill='%23d9b45a'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Jost:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://honeyharvestsolutions.com/#org",
+      "name": "Honey Harvest Solutions",
+      "url": "https://honeyharvestsolutions.com/",
+      "logo": "https://honeyharvestsolutions.com/images/logo-gold.png",
+      "email": "info@honeyharvestsolutions.com",
+      "telephone": "+1-720-383-8414",
+      "sameAs": ["https://www.instagram.com/Honey.Harvest.Solutions"],
+      "slogan": "Your Growth. Our Craft.",
+      "areaServed": "US",
+      "founder": {"@type": "Person", "@id": "https://honeyharvestsolutions.com/#tyler"}
+    },
+    {
+      "@type": "Person",
+      "@id": "https://honeyharvestsolutions.com/#tyler",
+      "name": "Tyler King",
+      "jobTitle": "Commercial Cannabis Cultivator",
+      "worksFor": {"@id": "https://honeyharvestsolutions.com/#org"}
+    },
+    {
+      "@type": "WebSite",
+      "url": "https://honeyharvestsolutions.com/",
+      "name": "Honey Harvest Solutions",
+      "publisher": {"@id": "https://honeyharvestsolutions.com/#org"}
+    }
+  ]
+}
+</script>
+<style>
+/* ==========================================================
+   HONEY HARVEST SOLUTIONS — design tokens
+   ========================================================== */
+:root{
+  --ink:#0a0a0b;          /* page black */
+  --ink-2:#111113;        /* raised panels */
+  --ink-3:#18181b;        /* inputs, cards */
+  --line:rgba(217,180,90,.16);
+  --line-soft:rgba(242,236,221,.08);
+  --gold:#d9b45a;
+  --gold-deep:#9c8454;
+  --gold-pale:#f0e4a8;
+  --gold-grad:linear-gradient(115deg,#f3dc8a 0%,#d9b45a 38%,#b8944a 62%,#e9cf7a 100%);
+  --cream:#f2ecdd;
+  --cream-2:#cfc8b8;
+  --mute:#8b8a84;
+  --serif:"Cormorant Garamond",Georgia,"Times New Roman",serif;
+  --sans:"Jost","Helvetica Neue",Arial,sans-serif;
+  --wrap:1240px;
+  --gutter:clamp(20px,5vw,72px);
+  --ease:cubic-bezier(.2,.7,.2,1);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{background:var(--ink);color:var(--cream);font-family:var(--sans);font-weight:300;font-size:17px;line-height:1.65;overflow-x:hidden}
+body.locked{overflow:hidden}
+img,svg{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
+::selection{background:var(--gold);color:var(--ink)}
+:focus-visible{outline:2px solid var(--gold);outline-offset:4px;border-radius:2px}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+
+/* honeycomb texture — used sparingly */
+.honey{position:relative}
+.honey::before{content:"";position:absolute;inset:0;pointer-events:none;opacity:.55;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='56' height='97' viewBox='0 0 56 97'%3E%3Cg fill='none' stroke='%23d9b45a' stroke-opacity='.10' stroke-width='1'%3E%3Cpath d='M28 1l27 16v32L28 65 1 49V17z'/%3E%3Cpath d='M28 65l27 16v32M28 65L1 81v32'/%3E%3C/g%3E%3C/svg%3E");
+  -webkit-mask-image:radial-gradient(ellipse at 70% 30%,#000 0%,transparent 65%);mask-image:radial-gradient(ellipse at 70% 30%,#000 0%,transparent 65%)}
+
+/* ---------- type scale ---------- */
+h1,h2,h3,.display{font-family:var(--serif);font-weight:400;line-height:1.05;letter-spacing:-.005em;color:var(--cream)}
+h1{font-size:clamp(46px,7.2vw,104px)}
+h2{font-size:clamp(36px,4.6vw,64px)}
+h3{font-size:clamp(26px,2.6vw,34px);line-height:1.15}
+h4{font-family:var(--sans);font-weight:500;font-size:19px;line-height:1.3}
+.lede{font-family:var(--serif);font-size:clamp(21px,2vw,27px);line-height:1.4;font-weight:400;color:var(--cream-2)}
+p{max-width:64ch}
+.gold{color:var(--gold)}
+.gold-text{background:var(--gold-grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+.ital{font-style:italic;font-weight:400}
+.small{font-size:14px;color:var(--mute)}
+.kicker{font-family:var(--serif);font-style:italic;font-size:20px;color:var(--gold);margin-bottom:14px;display:block}
+
+/* ---------- layout ---------- */
+.wrap{width:min(var(--wrap),100% - var(--gutter)*2);margin-inline:auto}
+.section{padding:clamp(72px,9vw,140px) 0}
+.section.tight{padding:clamp(48px,6vw,88px) 0}
+.rule{height:1px;background:linear-gradient(90deg,transparent,var(--gold-deep),transparent);opacity:.5}
+.grid{display:grid;gap:clamp(22px,3vw,40px)}
+.g2{grid-template-columns:repeat(2,1fr)}
+.g3{grid-template-columns:repeat(3,1fr)}
+.g4{grid-template-columns:repeat(4,1fr)}
+.split{display:grid;grid-template-columns:5fr 7fr;gap:clamp(32px,6vw,96px);align-items:start}
+.split.rev{grid-template-columns:7fr 5fr}
+.head{max-width:760px;margin-bottom:clamp(36px,5vw,64px)}
+.head p{margin-top:18px;color:var(--cream-2);font-size:18px}
+@media (max-width:900px){.g3,.g4{grid-template-columns:repeat(2,1fr)}.split,.split.rev{grid-template-columns:1fr}}
+@media (max-width:600px){.g2,.g3,.g4{grid-template-columns:1fr}}
+
+/* ---------- buttons ---------- */
+.btn{display:inline-flex;align-items:center;gap:12px;padding:16px 28px;font-weight:500;font-size:15px;letter-spacing:.02em;border-radius:2px;transition:transform .35s var(--ease),background .35s,color .35s,box-shadow .35s;position:relative;isolation:isolate}
+.btn-gold{background:var(--gold-grad);color:#1a1406;background-size:200% 100%;box-shadow:0 10px 30px -12px rgba(217,180,90,.45)}
+.btn-gold:hover{background-position:100% 0;transform:translateY(-2px);box-shadow:0 18px 40px -14px rgba(217,180,90,.6)}
+.btn-line{border:1px solid rgba(217,180,90,.5);color:var(--gold-pale)}
+.btn-line:hover{border-color:var(--gold);background:rgba(217,180,90,.08)}
+.btn-text{padding:0;color:var(--gold);font-weight:500;border-bottom:1px solid transparent;border-radius:0}
+.btn-text:hover{border-bottom-color:var(--gold)}
+.btn-text i{display:inline-block;width:22px;height:1px;background:currentColor;transition:width .3s var(--ease)}
+.btn-text:hover i{width:34px}
+.btn:disabled{opacity:.6;cursor:default;transform:none}
+
+/* ---------- photo placeholders ----------
+   Every <img data-slot="…"> without a src gets an auto-generated placeholder.
+   To use a real photo: add src="images/YOUR-FILE.jpg" to that <img>. That's it. */
+.photo{width:100%;height:100%;object-fit:cover;background:var(--ink-2)}
+.frame{position:relative;overflow:hidden;background:var(--ink-2);border:1px solid var(--line-soft)}
+.frame.r43{aspect-ratio:4/3}.frame.r32{aspect-ratio:3/2}.frame.r1{aspect-ratio:1}.frame.r45{aspect-ratio:4/5}.frame.r169{aspect-ratio:16/9}.frame.r21{aspect-ratio:2/1}
+.frame .photo{position:absolute;inset:0}
+
+/* ---------- header ---------- */
+.header{position:fixed;inset:0 0 auto;z-index:60;transition:background .4s,border-color .4s,backdrop-filter .4s;border-bottom:1px solid transparent}
+.header.solid{background:rgba(10,10,11,.82);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom-color:var(--line-soft)}
+.header .wrap{display:flex;align-items:center;justify-content:space-between;height:82px}
+.brand{display:flex;align-items:center;gap:14px}
+.brand img{height:44px;width:auto}
+.brand .mark{width:44px;height:auto}
+.brand span{font-family:var(--serif);font-size:23px;letter-spacing:.01em;color:var(--cream)}
+.brand small{display:block;font-family:var(--sans);font-size:11px;letter-spacing:.18em;color:var(--gold);font-weight:500;margin-top:2px}
+.nav{display:flex;align-items:center;gap:34px}
+.nav a{font-size:14.5px;font-weight:400;letter-spacing:.03em;color:var(--cream-2);position:relative;padding:6px 0}
+.nav a::after{content:"";position:absolute;left:0;right:100%;bottom:0;height:1px;background:var(--gold);transition:right .35s var(--ease)}
+.nav a:hover::after,.nav a.on::after{right:0}
+.nav a.on{color:var(--cream)}
+.nav .btn{padding:11px 20px;font-size:13.5px}
+.nav a.btn-gold{color:#1a1406}.nav a.btn-gold::after{display:none}
+.burger{display:none;width:44px;height:44px;place-items:center}
+.burger span{display:block;width:24px;height:1.5px;background:var(--cream);position:relative;transition:transform .3s,background .3s}
+.burger span::before,.burger span::after{content:"";position:absolute;left:0;width:24px;height:1.5px;background:var(--cream);transition:transform .3s,top .3s}
+.burger span::before{top:-8px}.burger span::after{top:8px}
+.burger[aria-expanded="true"] span{background:transparent}
+.burger[aria-expanded="true"] span::before{top:0;transform:rotate(45deg)}
+.burger[aria-expanded="true"] span::after{top:0;transform:rotate(-45deg)}
+@media (max-width:1000px){
+  .nav{position:fixed;inset:82px 0 0;background:rgba(10,10,11,.97);flex-direction:column;align-items:flex-start;justify-content:flex-start;gap:8px;padding:28px var(--gutter);transform:translateX(100%);transition:transform .45s var(--ease);border-top:1px solid var(--line-soft)}
+  .nav.open{transform:none}
+  .nav a{font-family:var(--serif);font-size:34px;padding:10px 0;width:100%;border-bottom:1px solid var(--line-soft)}
+  .nav a::after{display:none}
+  .nav .btn{margin-top:22px;font-family:var(--sans);font-size:15px;width:auto;border-bottom:0}
+  .burger{display:grid}
+  .brand span{font-size:20px}
+}
+
+/* ---------- pages (hash router) ---------- */
+.page{display:none;padding-top:82px}
+.page.active{display:block}
+.page-hero{padding:clamp(64px,9vw,120px) 0 clamp(40px,5vw,72px)}
+.page-hero h1{font-size:clamp(44px,6.4vw,88px);max-width:14ch}
+.page-hero .lede{margin-top:26px;max-width:60ch}
+.page-hero.img{position:relative;min-height:62vh;display:flex;align-items:flex-end;padding-bottom:clamp(48px,6vw,88px)}
+.page-hero.img .bg{position:absolute;inset:0;z-index:0}
+.page-hero.img .bg .photo{opacity:.55}
+.page-hero.img .bg::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(10,10,11,.35),rgba(10,10,11,.75) 60%,var(--ink))}
+.page-hero.img .wrap{position:relative;z-index:1}
+
+/* ---------- home hero ---------- */
+.hero{position:relative;min-height:100vh;min-height:100svh;display:grid;align-items:center;overflow:hidden}
+.hero .slides{position:absolute;inset:0;z-index:0}
+.hero .slides .photo{position:absolute;inset:0;opacity:0;transition:opacity 2.2s ease;transform:scale(1.04)}
+.hero .slides .photo.show{opacity:1;animation:kenburns 12s ease-out forwards}
+@keyframes kenburns{from{transform:scale(1.04)}to{transform:scale(1.12)}}
+.hero .slides::after{content:"";position:absolute;inset:0;background:radial-gradient(120% 90% at 20% 50%,rgba(10,10,11,.55) 0%,rgba(10,10,11,.85) 55%,var(--ink) 100%)}
+.hero .wrap{position:relative;z-index:1;padding:140px 0 110px}
+.hero h1{max-width:11ch}
+.hero h1 .line{display:block;overflow:hidden}
+.hero h1 .line > span{display:block;transform:translateY(110%);animation:rise 1.1s var(--ease) forwards}
+.hero h1 .line:nth-child(2) > span{animation-delay:.12s}
+.hero h1 .line:nth-child(3) > span{animation-delay:.24s}
+@keyframes rise{to{transform:none}}
+.hero .lede{margin-top:32px;max-width:52ch;opacity:0;animation:fade 1.2s ease .6s forwards}
+.hero-alt{margin-top:26px;font-size:15px;color:var(--mute);opacity:0;animation:fade 1.2s ease 1s forwards}
+.hero-alt a{color:var(--gold);border-bottom:1px solid var(--gold-deep)}
+.hero .cta{margin-top:44px;display:flex;flex-wrap:wrap;gap:16px;opacity:0;animation:fade 1.2s ease .85s forwards}
+@keyframes fade{to{opacity:1}}
+.hero .scroll{position:absolute;right:var(--gutter);bottom:36px;z-index:1;display:flex;align-items:center;gap:14px;font-size:12px;letter-spacing:.2em;color:var(--mute);opacity:0;animation:fade 1s ease 1.4s forwards}
+.hero .scroll i{width:1px;height:56px;background:linear-gradient(var(--gold),transparent);display:block;position:relative;overflow:hidden}
+.hero .scroll i::after{content:"";position:absolute;left:0;top:-100%;width:100%;height:100%;background:var(--cream);animation:drip 2.4s ease-in-out infinite}
+@keyframes drip{to{top:100%}}
+.hero .dots{position:absolute;left:var(--gutter);bottom:40px;z-index:1;display:flex;gap:8px}
+.hero .dots button{width:28px;height:2px;background:rgba(242,236,221,.25);transition:background .3s}
+.hero .dots button[aria-current="true"]{background:var(--gold)}
+.hero-tag{position:absolute;top:110px;right:var(--gutter);z-index:1;font-family:var(--serif);font-style:italic;font-size:20px;color:var(--gold);opacity:0;animation:fade 1s ease 1.2s forwards}
+@media (max-width:700px){.hero-tag{display:none}.hero .scroll{display:none}}
+
+/* ---------- "What I Offer" ---------- */
+.offer{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border:1px solid var(--line)}
+.offer a{background:var(--ink);padding:38px 34px 34px;display:block;position:relative;transition:background .4s}
+.offer a:hover{background:var(--ink-2)}
+.offer a::after{content:"";position:absolute;left:34px;right:34px;bottom:0;height:1px;background:var(--gold-grad);transform:scaleX(0);transform-origin:left;transition:transform .5s var(--ease)}
+.offer a:hover::after{transform:none}
+.offer .ic{width:40px;height:40px;color:var(--gold);margin-bottom:26px}
+.offer .ic svg{width:100%;height:100%;stroke:currentColor;fill:none;stroke-width:1.2;stroke-linecap:round;stroke-linejoin:round}
+.offer h3{font-size:30px;margin-bottom:8px}
+.offer h3 em{font-style:italic;font-weight:400;color:var(--gold-pale)}
+.offer p{font-size:15.5px;color:var(--cream-2);min-height:3.2em}
+.offer .go{margin-top:20px;font-size:13.5px;color:var(--gold);letter-spacing:.06em;font-weight:500}
+.offer .soon{position:absolute;top:22px;right:22px;font-size:11px;letter-spacing:.14em;color:var(--mute);border:1px solid var(--line-soft);padding:4px 9px;border-radius:99px}
+@media (max-width:900px){.offer{grid-template-columns:1fr 1fr}}
+@media (max-width:560px){.offer{grid-template-columns:1fr}}
+
+/* beehive home block */
+.beehive-home{border-block:1px solid var(--line-soft)}
+.follow{display:grid;grid-template-columns:340px 1fr;gap:clamp(24px,4vw,56px);align-items:center;margin-top:clamp(40px,5vw,64px);padding-top:clamp(32px,4vw,48px);border-top:1px solid var(--line-soft)}
+.follow-copy h3{font-size:30px;margin-bottom:10px}
+.follow-copy p{font-size:15.5px;color:var(--cream-2);margin-bottom:22px}
+.follow-copy .btn{white-space:nowrap}
+.follow .ig-grid{grid-template-columns:repeat(6,1fr)}
+.ask-teaser{display:flex;justify-content:space-between;align-items:center;gap:24px;flex-wrap:wrap;margin-top:clamp(32px,4vw,48px);padding:28px 32px;border:1px solid var(--line);background:var(--ink-2)}
+.ask-teaser h3{font-size:28px;margin-bottom:6px}
+.ask-teaser p{font-size:15px;color:var(--cream-2)}
+@media (max-width:900px){.follow{grid-template-columns:1fr}.follow .ig-grid{grid-template-columns:repeat(3,1fr)}}
+/* instagram grid + channels */
+.ig-btn svg{width:18px;height:18px;stroke:currentColor;fill:none;stroke-width:1.8}
+.ig-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:8px}
+.ig-grid a{position:relative;aspect-ratio:1;overflow:hidden;background:var(--ink-2);border:1px solid var(--line-soft);display:block}
+.ig-grid img{width:100%;height:100%;object-fit:cover;transition:transform 1s var(--ease)}
+.ig-grid a:hover img{transform:scale(1.05)}
+.ig-grid a::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 55%,rgba(10,10,11,.8));opacity:0;transition:opacity .3s}
+.ig-grid a:hover::after{opacity:1}
+.ig-grid span{position:absolute;left:12px;right:12px;bottom:10px;z-index:1;font-size:12.5px;color:var(--cream);opacity:0;transition:opacity .3s;line-height:1.3}
+.ig-grid a:hover span{opacity:1}
+@media (max-width:900px){.ig-grid{grid-template-columns:repeat(3,1fr)}.ig-grid span{display:none}}
+.channels{display:flex;gap:12px;flex-wrap:wrap;margin-top:32px}
+.chan{display:flex;align-items:center;gap:14px;padding:14px 20px 14px 16px;border:1px solid var(--line);background:var(--ink-2);transition:border-color .3s,background .3s}
+.chan:hover{border-color:var(--gold);background:var(--ink-3)}
+.chan svg{width:26px;height:26px;stroke:var(--gold);fill:none;stroke-width:1.5;flex:none}
+.chan span{display:grid;font-size:13.5px;color:var(--mute);line-height:1.25}
+.chan b{font-weight:500;color:var(--cream);font-size:15px}
+/* partner strip */
+.partners{display:grid;grid-template-columns:1.1fr 1fr;gap:clamp(24px,5vw,64px);align-items:center;margin-top:clamp(40px,5vw,64px);padding-top:clamp(32px,4vw,48px);border-top:1px solid var(--line-soft)}
+.partners .ptext p{font-size:15.5px;color:var(--cream-2)}
+.plogos{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.plogo{height:84px;display:grid;place-items:center;text-align:center;padding:10px;border:1px solid var(--line-soft);font-family:var(--serif);font-size:18px;color:var(--gold-pale);line-height:1.15}
+.plogo img{max-height:52px;width:auto}
+@media (max-width:900px){.partners{grid-template-columns:1fr}}
+@media (max-width:560px){.plogos{grid-template-columns:1fr}}
+/* ---------- cards / notes ---------- */
+.note{display:grid;grid-template-rows:auto 1fr;border:1px solid var(--line-soft);background:var(--ink-2);transition:border-color .35s;cursor:pointer;text-align:left;color:inherit;width:100%}
+.note:hover{border-color:rgba(217,180,90,.45)}
+.note .frame{border:0;border-bottom:1px solid var(--line-soft)}
+.note .frame .photo{transition:transform 1.2s var(--ease)}
+.note:hover .frame .photo{transform:scale(1.05)}
+.note .body{padding:26px 26px 28px}
+.note .meta{font-size:13px;color:var(--mute);margin-bottom:12px}
+.note h3{font-size:27px;margin-bottom:10px}
+.note p{font-size:15px;color:var(--cream-2)}
+.note-list{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+@media (max-width:900px){.note-list{grid-template-columns:1fr 1fr}}
+@media (max-width:600px){.note-list{grid-template-columns:1fr}}
+
+/* feature band (Grower in Residence) */
+.feature{position:relative;overflow:hidden;background:var(--ink-2)}
+.feature .grid{grid-template-columns:1.1fr 1fr;align-items:center;gap:0}
+.feature .frame{aspect-ratio:auto;min-height:520px;height:100%}
+.feature .copy{padding:clamp(40px,6vw,88px)}
+.feature .copy h2{max-width:12ch}
+.feature ul{list-style:none;margin:28px 0 34px;display:grid;gap:10px}
+.feature li{display:flex;gap:14px;font-size:16px;color:var(--cream-2)}
+.feature li::before{content:"";width:9px;height:10px;flex:none;margin-top:9px;background:var(--gold);clip-path:polygon(50% 0,100% 25%,100% 75%,50% 100%,0 75%,0 25%)}
+@media (max-width:900px){.feature .grid{grid-template-columns:1fr}.feature .frame{min-height:340px;aspect-ratio:3/2}}
+
+/* stats */
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line-soft);border-block:1px solid var(--line-soft)}
+.stat{background:var(--ink);padding:38px 28px}
+.stat b{display:block;font-family:var(--serif);font-weight:400;font-size:clamp(46px,5vw,72px);line-height:1;color:var(--cream)}
+.stat b small{font-size:.5em;color:var(--gold);vertical-align:top;margin-left:2px}
+.stat span{display:block;margin-top:10px;font-size:14px;color:var(--mute)}
+.stat b span{display:inline;margin:0;font-size:inherit;color:inherit}
+@media (max-width:800px){.stats{grid-template-columns:1fr 1fr}}
+
+/* proof gallery */
+.gallery{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:200px;gap:10px}
+.gallery button{position:relative;overflow:hidden;background:var(--ink-2);border:1px solid var(--line-soft);padding:0;display:block}
+.gallery button:nth-child(1){grid-column:span 2;grid-row:span 2}
+.gallery button:nth-child(6){grid-column:span 4}
+.gallery .photo{position:absolute;inset:0;transition:transform 1.2s var(--ease),filter .6s}
+.gallery button:hover .photo{transform:scale(1.05);filter:brightness(1.1)}
+@media (max-width:700px){.gallery{grid-template-columns:1fr 1fr;grid-auto-rows:160px}.gallery button:nth-child(1){grid-column:span 2}.gallery button:nth-child(6){grid-column:span 2}}
+
+/* subscribe band */
+.band{position:relative;overflow:hidden;background:var(--ink-2);border-block:1px solid var(--line)}
+.band .inner{display:grid;grid-template-columns:1.2fr 1fr;gap:clamp(32px,6vw,80px);align-items:center;padding:clamp(56px,8vw,110px) 0}
+.band h2{max-width:14ch}
+.band .glow{position:absolute;width:640px;height:640px;right:-200px;top:-260px;border-radius:50%;background:radial-gradient(circle,rgba(217,180,90,.14),transparent 62%);pointer-events:none}
+@media (max-width:900px){.band .inner{grid-template-columns:1fr}}
+
+/* forms */
+.form{display:grid;gap:14px}
+.form .row{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.form label{display:grid;gap:7px;font-size:13px;letter-spacing:.04em;color:var(--cream-2)}
+.form input,.form textarea,.form select{width:100%;background:var(--ink-3);border:1px solid var(--line-soft);color:var(--cream);padding:14px 16px;font:inherit;font-size:16px;border-radius:2px;transition:border-color .3s}
+.form input:focus,.form textarea:focus,.form select:focus{outline:none;border-color:var(--gold)}
+.form textarea{min-height:140px;resize:vertical}
+.form select{appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='9'%3E%3Cpath d='M1 1l6 6 6-6' fill='none' stroke='%23d9b45a' stroke-width='1.5'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 16px center}
+.form .inline{display:flex;gap:10px}
+.form .inline input{flex:1}
+.form .ok{display:none;padding:18px 20px;border:1px solid rgba(217,180,90,.4);background:rgba(217,180,90,.06);color:var(--gold-pale);font-size:15px}
+.form.sent .ok{display:block}
+.form.sent .hide-on-sent{display:none}
+.form .fine{font-size:12.5px;color:var(--mute)}
+@media (max-width:560px){.form .row{grid-template-columns:1fr}}
+
+/* footer */
+.footer{border-top:1px solid var(--line-soft);padding:64px 0 36px;font-size:14px;color:var(--mute)}
+.footer .top{display:grid;grid-template-columns:1.6fr 1fr 1fr 1fr;gap:40px;margin-bottom:48px}
+.footer h4{color:var(--cream);font-size:14px;letter-spacing:.06em;margin-bottom:16px}
+.footer ul{list-style:none;display:grid;gap:9px}
+.footer a:hover{color:var(--gold)}
+.footer .bottom{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;padding-top:24px;border-top:1px solid var(--line-soft);font-size:13px}
+.footer .tag{font-family:var(--serif);font-style:italic;font-size:22px;color:var(--gold);margin:14px 0 10px}
+@media (max-width:800px){.footer .top{grid-template-columns:1fr 1fr}}
+
+/* overlays */
+.gate{position:fixed;inset:0;z-index:100;background:var(--ink);display:grid;place-items:center;text-align:center;padding:24px}
+.gate.off{display:none}
+.gate .box{max-width:520px}
+.gate .mark{width:72px;height:72px;margin:0 auto 28px}
+.gate h2{font-size:clamp(34px,5vw,54px);margin-bottom:14px}
+.gate p{margin:0 auto 32px;color:var(--cream-2)}
+.gate .btns{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+.gate .no{margin-top:22px;display:none;color:var(--mute);font-size:14px}
+.gate.denied .no{display:block}
+.cookie{position:fixed;left:16px;right:16px;bottom:16px;z-index:90;background:var(--ink-2);border:1px solid var(--line);padding:18px 20px;display:none;gap:18px;align-items:center;justify-content:space-between;flex-wrap:wrap;max-width:760px;margin-inline:auto;font-size:14px;color:var(--cream-2);box-shadow:0 30px 60px -30px rgba(0,0,0,.8)}
+.cookie.show{display:flex}
+.cookie .btns{display:flex;gap:10px}
+.cookie .btn{padding:10px 16px;font-size:13px}
+.totop{position:fixed;right:22px;bottom:22px;z-index:80;width:46px;height:46px;border:1px solid var(--line);background:rgba(10,10,11,.85);backdrop-filter:blur(8px);display:grid;place-items:center;color:var(--gold);opacity:0;pointer-events:none;transition:opacity .3s,transform .3s;transform:translateY(8px)}
+.totop.show{opacity:1;pointer-events:auto;transform:none}
+.totop svg{width:16px;height:16px;stroke:currentColor;fill:none;stroke-width:1.5}
+.lightbox{position:fixed;inset:0;z-index:95;background:rgba(6,6,7,.94);display:none;place-items:center;padding:24px}
+.lightbox.show{display:grid}
+.lightbox .photo{max-width:min(1200px,92vw);max-height:86vh;width:auto;height:auto;object-fit:contain;position:static}
+.lightbox .x{position:absolute;top:18px;right:22px;font-size:14px;letter-spacing:.14em;color:var(--cream-2);padding:10px}
+.lightbox .cap{position:absolute;bottom:22px;left:0;right:0;text-align:center;color:var(--mute);font-size:14px}
+.modal{position:fixed;inset:0;z-index:96;background:rgba(6,6,7,.9);display:none;place-items:center;padding:20px;overflow:auto}
+.modal.show{display:grid}
+.modal .card{background:var(--ink-2);border:1px solid var(--line);max-width:680px;width:100%;padding:0;position:relative}
+.modal .x{position:absolute;top:14px;right:16px;padding:8px;color:var(--cream-2);z-index:2;font-size:13px;letter-spacing:.12em}
+.toast{position:fixed;left:50%;bottom:28px;transform:translate(-50%,20px);z-index:110;background:var(--gold);color:var(--ink);padding:12px 20px;font-size:14px;font-weight:500;opacity:0;pointer-events:none;transition:.35s}
+.toast.show{opacity:1;transform:translate(-50%,0)}
+
+/* scroll reveal — one soft pass, disabled for reduced motion */
+.rv{opacity:0;transform:translateY(22px);transition:opacity .9s var(--ease),transform .9s var(--ease)}
+.rv.in{opacity:1;transform:none}
+
+/* ---------- page-specific ---------- */
+/* Work With Me offer rows */
+.offer-row{display:grid;grid-template-columns:1fr 1.2fr;gap:clamp(28px,5vw,72px);padding:clamp(40px,5vw,64px) 0;border-top:1px solid var(--line-soft);align-items:start}
+.offer-row:last-child{border-bottom:1px solid var(--line-soft)}
+.offer-row h3{font-size:clamp(32px,3.4vw,44px)}
+.offer-row h3 em{font-style:italic;color:var(--gold-pale)}
+.offer-row .who{margin-top:12px;font-size:14px;color:var(--gold);letter-spacing:.04em}
+.offer-row .body p+p{margin-top:14px}
+.offer-row .body .btn{margin-top:26px}
+.offer-row ul{list-style:none;margin:18px 0 0;display:grid;gap:8px;color:var(--cream-2);font-size:15.5px}
+.offer-row li{display:flex;gap:12px}.offer-row li::before{content:"";width:8px;height:9px;flex:none;margin-top:9px;background:var(--gold);clip-path:polygon(50% 0,100% 25%,100% 75%,50% 100%,0 75%,0 25%)}
+@media (max-width:800px){.offer-row{grid-template-columns:1fr}}
+
+/* design packages */
+.pkgs{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.pkg{border:1px solid var(--line-soft);background:var(--ink-2);display:flex;flex-direction:column;transition:border-color .35s}
+.pkg:hover{border-color:rgba(217,180,90,.45)}
+.pkg .frame{border:0;border-bottom:1px solid var(--line-soft)}
+.pkg .body{padding:26px 24px 28px;display:flex;flex-direction:column;flex:1}
+.pkg .sz{font-size:13px;color:var(--gold);letter-spacing:.05em;margin-bottom:8px}
+.pkg h3{font-size:28px;margin-bottom:10px}
+.pkg p{font-size:15px;color:var(--cream-2)}
+.pkg ul{list-style:none;margin:16px 0 22px;display:grid;gap:6px;font-size:14px;color:var(--cream-2)}
+.pkg li::before{content:"— ";color:var(--gold-deep)}
+.pkg .btn{margin-top:auto;align-self:flex-start}
+.pkg.custom{background:transparent;border-style:dashed}
+@media (max-width:1000px){.pkgs{grid-template-columns:1fr 1fr}}
+@media (max-width:560px){.pkgs{grid-template-columns:1fr}}
+
+/* capability list */
+.caps{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line-soft);border:1px solid var(--line-soft)}
+.caps div{background:var(--ink);padding:26px 22px}
+.caps b{display:block;font-family:var(--serif);font-weight:400;font-size:24px;margin-bottom:6px}
+.caps span{font-size:14px;color:var(--mute)}
+@media (max-width:900px){.caps{grid-template-columns:1fr 1fr}}
+
+/* design sheet browser */
+.sheets{display:grid;grid-template-columns:260px 1fr;gap:28px;align-items:start}
+.sheets .list{display:grid;gap:4px;max-height:560px;overflow:auto;padding-right:6px}
+.sheets .list button{display:grid;grid-template-columns:auto 1fr;gap:14px;align-items:center;text-align:left;padding:12px 14px;border:1px solid transparent;transition:.3s;color:var(--cream-2)}
+.sheets .list button:hover{background:var(--ink-2)}
+.sheets .list button.on{border-color:rgba(217,180,90,.5);background:var(--ink-2);color:var(--cream)}
+.sheets .list b{font-family:var(--serif);font-weight:400;font-size:20px;color:var(--gold);min-width:52px}
+.sheets .list span{font-size:14px;line-height:1.3}
+.sheets .view{position:relative;background:#fff;border:1px solid var(--line);aspect-ratio:1.55}
+.sheets .view img{width:100%;height:100%;object-fit:contain;display:block}
+.sheets .cap{display:flex;justify-content:space-between;align-items:baseline;gap:20px;margin-top:14px;flex-wrap:wrap}
+.sheets .cap h4{font-family:var(--serif);font-weight:400;font-size:26px}
+.sheets .cap p{font-size:14.5px;color:var(--mute);margin-top:4px}
+.sheets .open{position:absolute;right:12px;top:12px;background:rgba(10,10,11,.85);color:var(--gold);font-size:12px;letter-spacing:.12em;padding:9px 12px;border:1px solid var(--line)}
+@media (max-width:900px){.sheets{grid-template-columns:1fr}.sheets .list{max-height:none;grid-template-columns:1fr 1fr;grid-auto-flow:row}.sheets .list button{padding:10px}}
+@media (max-width:520px){.sheets .list{grid-template-columns:1fr}}
+.sheet-strip{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
+.sheet-strip button{background:#fff;border:1px solid var(--line-soft);aspect-ratio:1.55;overflow:hidden;padding:0;transition:border-color .3s}
+.sheet-strip button:hover{border-color:var(--gold)}
+.sheet-strip img{width:100%;height:100%;object-fit:cover}
+@media (max-width:700px){.sheet-strip{grid-template-columns:1fr 1fr}}
+.lightbox .nav{position:absolute;top:50%;transform:translateY(-50%);padding:18px 14px;color:var(--cream);font-size:28px;font-family:var(--serif);background:rgba(10,10,11,.6);border:1px solid var(--line-soft)}
+.lightbox .nav.prev{left:16px}.lightbox .nav.next{right:16px}
+.lightbox .nav[hidden]{display:none}
+/* the network band */
+.network{background:var(--ink-2);border-block:1px solid var(--line)}
+.lanes{display:grid;grid-template-columns:repeat(4,1fr);gap:0;margin-top:40px;position:relative}
+.lanes::before{content:"";position:absolute;left:12%;right:12%;top:31px;height:1px;background:linear-gradient(90deg,transparent,var(--gold),var(--gold),transparent);opacity:.6}
+.lane{padding:0 20px;text-align:center;position:relative}
+.lane .hex{width:62px;height:62px;margin:0 auto 22px;display:grid;place-items:center;position:relative;color:var(--gold)}
+.lane .hex::before,.lane .hex::after{content:"";position:absolute;inset:0;clip-path:polygon(50% 0,100% 25%,100% 75%,50% 100%,0 75%,0 25%)}
+.lane .hex::before{background:var(--gold)}
+.lane .hex::after{inset:1.5px;background:var(--ink)}
+.lane .hex svg{width:26px;height:26px;position:relative;z-index:1;stroke:currentColor;fill:none;stroke-width:1.3;stroke-linecap:round;stroke-linejoin:round}
+.lane.me .hex::after{background:var(--gold)}
+.lane.me .hex{color:var(--ink)}
+.lane .stage{font-family:var(--serif);font-size:30px;color:var(--cream);line-height:1}
+.lane .who{margin-top:10px;font-size:15px;font-weight:500;color:var(--gold-pale)}
+.lane p{margin:8px auto 0;font-size:14px;color:var(--mute);max-width:26ch}
+.lane .logo{margin:18px auto 0;height:44px;width:140px;border:1px dashed var(--line-soft);display:grid;place-items:center;font-size:11px;letter-spacing:.1em;color:var(--mute)}
+@media (max-width:800px){.lanes{grid-template-columns:1fr 1fr;row-gap:36px}.lanes::before{display:none}}
+@media (max-width:480px){.lanes{grid-template-columns:1fr}}
+
+/* process steps (a real sequence, so numbering is warranted) */
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:28px;counter-reset:step}
+.step{counter-increment:step;padding-top:20px;border-top:1px solid var(--line)}
+.step::before{content:counter(step,decimal-leading-zero);font-family:var(--serif);font-size:44px;color:var(--gold);line-height:1;display:block;margin-bottom:14px}
+.step h4{margin-bottom:8px;font-family:var(--serif);font-weight:400;font-size:26px}
+.step p{font-size:15px;color:var(--cream-2)}
+@media (max-width:900px){.steps{grid-template-columns:1fr 1fr}}
+@media (max-width:520px){.steps{grid-template-columns:1fr}}
+
+/* GIR ways */
+.ways{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line-soft);border:1px solid var(--line-soft)}
+.way{background:var(--ink);padding:32px 28px}
+.way h4{font-family:var(--serif);font-weight:400;font-size:28px;margin-bottom:10px}
+.way p{font-size:15px;color:var(--cream-2)}
+@media (max-width:900px){.ways{grid-template-columns:1fr 1fr}}
+@media (max-width:560px){.ways{grid-template-columns:1fr}}
+.outcomes{display:grid;grid-template-columns:repeat(2,1fr);gap:20px 48px;margin-top:36px}
+.outcome{display:grid;grid-template-columns:auto 1fr;gap:18px;align-items:baseline;padding:18px 0;border-bottom:1px solid var(--line-soft)}
+.outcome b{font-family:var(--serif);font-weight:400;font-size:34px;color:var(--gold);white-space:nowrap}
+.outcome span{color:var(--cream-2);font-size:15.5px}
+@media (max-width:700px){.outcomes{grid-template-columns:1fr}}
+
+/* The Menu */
+.menu-hero{text-align:center;padding:clamp(72px,10vw,150px) 0 clamp(40px,5vw,64px)}
+.menu-hero h1{margin-inline:auto}
+.menu-hero .lede{margin:26px auto 0;max-width:56ch}
+.disc{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--line-soft);border:1px solid var(--line-soft)}
+.disc article{background:var(--ink);padding:clamp(28px,4vw,48px);display:grid;grid-template-columns:auto 1fr;gap:24px;align-items:start}
+.disc .hex{width:48px;height:52px;background:var(--gold);clip-path:polygon(50% 0,100% 25%,100% 75%,50% 100%,0 75%,0 25%);display:grid;place-items:center;font-family:var(--serif);font-size:22px;color:var(--ink);flex:none}
+.disc h3{font-size:32px;margin-bottom:8px}
+.disc p{font-size:15.5px;color:var(--cream-2)}
+@media (max-width:760px){.disc{grid-template-columns:1fr}}
+.manifesto{text-align:center;padding:clamp(80px,12vw,160px) 0}
+.manifesto p{font-family:var(--serif);font-size:clamp(28px,4vw,52px);line-height:1.2;max-width:22ch;margin:0 auto;color:var(--cream)}
+.manifesto p em{color:var(--gold)}
+
+/* genetics */
+.strains{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.strain{perspective:1400px;min-height:440px}
+.strain .inner{position:relative;width:100%;height:100%;min-height:440px;transition:transform .9s var(--ease);transform-style:preserve-3d}
+.strain.flip .inner{transform:rotateY(180deg)}
+.strain .face{position:absolute;inset:0;backface-visibility:hidden;-webkit-backface-visibility:hidden;border:1px solid var(--line-soft);background:var(--ink-2);display:flex;flex-direction:column;overflow:hidden}
+.strain .front .frame{flex:1;border:0;aspect-ratio:auto}
+.strain .front .body{padding:22px 22px 24px;display:flex;justify-content:space-between;align-items:flex-end;gap:12px}
+.strain h3{font-size:28px}
+.strain .thc{font-family:var(--serif);font-size:24px;color:var(--gold);white-space:nowrap}
+.strain .back{transform:rotateY(180deg);padding:30px 26px;background:var(--ink-3)}
+.strain .back h3{margin-bottom:18px}
+.strain dl{display:grid;grid-template-columns:auto 1fr;gap:10px 18px;font-size:15px}
+.strain dt{color:var(--mute)}.strain dd{color:var(--cream)}
+.strain .badge{position:absolute;top:16px;left:16px;z-index:2;font-size:11px;letter-spacing:.14em;background:var(--gold);color:var(--ink);padding:6px 10px;font-weight:500}
+.strain .badge.tc{left:auto;right:16px;background:rgba(10,10,11,.8);color:var(--gold);border:1px solid var(--gold-deep)}
+.strain .back .badge{position:static;display:inline-block;margin-top:auto;align-self:flex-start}
+.strain .flipbtn{margin-top:auto;font-size:13px;letter-spacing:.06em;color:var(--gold);align-self:flex-start;padding:8px 0}
+.strain .back .flipbtn{margin-top:22px}
+@media (max-width:900px){.strains{grid-template-columns:1fr 1fr}}
+@media (max-width:560px){.strains{grid-template-columns:1fr}}
+.targets{display:flex;gap:40px;flex-wrap:wrap;margin-top:28px}
+.targets div b{display:block;font-family:var(--serif);font-weight:400;font-size:40px;line-height:1;color:var(--gold)}
+.targets div span{font-size:13.5px;color:var(--mute)}
+
+/* beehive */
+.article{max-width:720px;margin:0 auto}
+.article .meta{color:var(--mute);font-size:14px;margin-bottom:18px}
+.article h1{font-size:clamp(40px,5vw,66px);margin-bottom:26px}
+.article .frame{margin:36px 0}
+.article p{font-size:18px;line-height:1.75;color:var(--cream-2);max-width:none;margin-bottom:22px}
+.article h3{margin:40px 0 14px}
+.article blockquote{font-family:var(--serif);font-size:28px;line-height:1.3;color:var(--cream);border-left:2px solid var(--gold);padding-left:24px;margin:36px 0}
+.article ul{margin:0 0 22px 22px;color:var(--cream-2);font-size:17px;line-height:1.7}
+.article .back{display:inline-flex;gap:10px;align-items:center;margin-bottom:38px;color:var(--gold);font-size:14px;letter-spacing:.04em}
+.topics{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:34px}
+.topics button{font-size:13px;letter-spacing:.05em;padding:8px 14px;border:1px solid var(--line-soft);color:var(--cream-2);border-radius:99px;transition:.3s}
+.topics button:hover,.topics button.on{border-color:var(--gold);color:var(--gold)}
+
+/* ask a grower */
+.qa{display:grid;gap:12px}
+.qa details{border:1px solid var(--line-soft);background:var(--ink-2)}
+.qa summary{list-style:none;cursor:pointer;padding:22px 26px;display:flex;justify-content:space-between;gap:20px;align-items:center;font-family:var(--serif);font-size:24px;color:var(--cream)}
+.qa summary::-webkit-details-marker{display:none}
+.qa summary i{width:14px;height:14px;position:relative;flex:none}
+.qa summary i::before,.qa summary i::after{content:"";position:absolute;background:var(--gold);inset:50% 0 auto;height:1px;transform:translateY(-50%)}
+.qa summary i::after{transform:translateY(-50%) rotate(90deg);transition:transform .3s}
+.qa details[open] summary i::after{transform:translateY(-50%) rotate(0)}
+.qa .a{padding:0 26px 26px;color:var(--cream-2);font-size:16px}
+.qa .a p+p{margin-top:12px}
+.qa .who{font-size:13px;color:var(--mute);margin-top:14px}
+
+/* about / case study */
+.case{border:1px solid var(--line);background:var(--ink-2);padding:clamp(28px,4vw,52px);display:grid;grid-template-columns:1.1fr 1fr;gap:clamp(28px,5vw,60px)}
+.case dl{display:grid;grid-template-columns:auto 1fr;gap:12px 24px;font-size:15px;margin-top:24px}
+.case dt{color:var(--mute)}.case dd{color:var(--cream)}
+@media (max-width:800px){.case{grid-template-columns:1fr}}
+.timeline{list-style:none;margin-top:28px;border-left:1px solid var(--line);padding-left:28px;display:grid;gap:22px}
+.timeline li{position:relative}
+.timeline li::before{content:"";position:absolute;left:-33px;top:9px;width:9px;height:10px;background:var(--gold);clip-path:polygon(50% 0,100% 25%,100% 75%,50% 100%,0 75%,0 25%)}
+.timeline b{display:block;font-family:var(--serif);font-weight:400;font-size:24px}
+.timeline span{color:var(--cream-2);font-size:15px}
+
+/* legal */
+.legal h3{margin:36px 0 12px}
+.legal p{color:var(--cream-2);margin-bottom:14px}
+/* 404 */
+.nf{min-height:70vh;display:grid;place-items:center;text-align:center}
+.nf b{font-family:var(--serif);font-weight:300;font-size:clamp(100px,20vw,220px);line-height:1;display:block;color:var(--gold);opacity:.9}
+
+/* reduced motion */
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation-duration:.001ms!important;animation-iteration-count:1!important;transition-duration:.001ms!important;scroll-behavior:auto!important}
+  .hero h1 .line>span{transform:none}.hero .lede,.hero .cta,.hero .scroll,.hero-tag{opacity:1}
+  .rv{opacity:1;transform:none}
+  .hero .slides .photo.show{animation:none;transform:none}
+}
+</style>
+</head>
+<body>
+
+<!-- ===== 21+ AGE GATE ===== -->
+<div class="gate honey" id="gate" role="dialog" aria-modal="true" aria-labelledby="gateTitle">
+  <div class="box">
+    <img src="images/logo-gold.png" alt="Honey Harvest Solutions" style="height:150px;width:auto;margin:0 auto 32px">
+    <h2 id="gateTitle">Are you 21 or older?</h2>
+    <p>Honey Harvest Solutions shares cultivation education and services for adults in legal markets. Please confirm your age to continue.</p>
+    <div class="btns">
+      <button class="btn btn-gold" id="gateYes">Yes, I'm 21+</button>
+      <button class="btn btn-line" id="gateNo">No</button>
+    </div>
+    <p class="no">Sorry — you must be 21 or older to enter this site.</p>
+  </div>
+</div>
+
+<!-- ===== COOKIE CONSENT ===== -->
+<div class="cookie" id="cookie" role="region" aria-label="Cookie notice">
+  <span>We use essential cookies to run the site and, with your permission, basic analytics to see which pages help most. <a href="#legal" class="gold">Cookie policy</a></span>
+  <div class="btns">
+    <button class="btn btn-line" data-cookie="essential">Essential only</button>
+    <button class="btn btn-gold" data-cookie="all">Accept</button>
+  </div>
+</div>
+
+<!-- ===== HEADER ===== -->
+<header class="header" id="header">
+  <div class="wrap">
+    <a class="brand" href="#home" aria-label="Honey Harvest Solutions home">
+      <img src="images/logo-mark.png" alt="" class="mark">
+      <span>Honey Harvest<small>SOLUTIONS</small></span>
+    </a>
+    <button class="burger" id="burger" aria-expanded="false" aria-controls="nav" aria-label="Menu"><span></span></button>
+    <nav class="nav" id="nav" aria-label="Primary">
+      <a href="#beehive" data-nav="beehive">The Beehive</a>
+      <a href="#menu" data-nav="menu">The Menu</a>
+      <a href="#work" data-nav="work">Work With Us</a>
+      <a href="#genetics" data-nav="genetics">Genetics</a>
+      <a href="#ask" data-nav="ask">Ask a Grower</a>
+      <a href="#contact" class="btn btn-gold" data-nav="contact">Get in touch</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+<!-- ================================================================
+     HOME
+     ================================================================ -->
+<section class="page" data-page="home" id="page-home">
+
+  <div class="hero">
+    <div class="slides" aria-hidden="true">
+      <!-- HERO SLIDESHOW: add src="images/hero-01.jpg" etc. Recommended 2400×1500, moody grow-room / canopy shots. -->
+      <img class="photo show" src="images/hero-01.jpg" data-slot="hero-01 · grow room canopy" alt="">
+      <img class="photo" src="images/hero-02.jpg" data-slot="hero-02 · macro bud" alt="">
+      <img class="photo" src="images/hero-03.jpg" data-slot="hero-03 · flower room under lights" alt="">
+    </div>
+    <span class="hero-tag">For the Growers.</span>
+    <div class="wrap">
+      <h1><span class="line"><span>Your Growth.</span></span><span class="line"><span>Our Craft.</span></span></h1>
+      <p class="lede">Commercial cannabis facility design, embedded growers, and elite genetics — from fourteen years of running the rooms. Not a consulting firm. Growers who build, run, and fix grows. Nationwide.</p>
+      <div class="cta">
+        <a href="#contact" class="btn btn-gold">Start a project</a>
+        <a href="tel:+17203838414" class="btn btn-line">Call 720-383-8414</a>
+      </div>
+      <p class="hero-alt">Not ready to talk? <a href="#beehive">The Beehive</a> is free — breakdowns, lessons, and answers from the rooms.</p>
+    </div>
+    <div class="dots" id="heroDots" aria-label="Slideshow controls"></div>
+    <div class="scroll" aria-hidden="true">SCROLL<i></i></div>
+  </div>
+
+  <!-- WHAT I OFFER -->
+  <div class="section tight">
+    <div class="wrap">
+      <div class="head rv">
+        <span class="kicker">What we do</span>
+        <h2>Four ways to work with us.</h2>
+        <p>From a tent in a spare room to a full commercial build — every engagement starts with the plant and ends with a better operation. Tell us which one fits and we'll take it from there.</p>
+      </div>
+      <div class="offer rv">
+        <a href="#facility">
+          <div class="ic"><svg viewBox="0 0 40 40"><path d="M4 34V16l16-9 16 9v18"/><path d="M4 34h32M14 34V24h12v10"/><path d="M20 7v4"/></svg></div>
+          <h3>Facility Design <em>&amp; Buildout</em></h3>
+          <p>Concept to canopy — cultivation, post-harvest, and packaging designed as one system, with a turnkey path through a vetted partner network.</p>
+          <span class="go">Explore facility design</span>
+        </a>
+        <a href="#gir">
+          <div class="ic"><svg viewBox="0 0 40 40"><circle cx="20" cy="13" r="6"/><path d="M8 34c0-7 5-11 12-11s12 4 12 11"/><path d="M28 6l4 4M12 6l-4 4"/></svg></div>
+          <h3>Grower in <em>Residence</em></h3>
+          <p>A proven grower embedded in your operation to launch, turn around, optimize, or scale. A force multiplier for the whole business.</p>
+          <span class="go">Bring in a grower</span>
+        </a>
+        <a href="#work-home">
+          <div class="ic"><svg viewBox="0 0 40 40"><path d="M6 20L20 8l14 12"/><path d="M10 17v16h20V17"/><path d="M20 33V24"/><path d="M16 24c0-3 2-5 4-6 2 1 4 3 4 6"/></svg></div>
+          <h3>Home Grow <em>Design</em></h3>
+          <p>A flat-rate setup design for home and new growers. The right gear, layout, environment, and plan — sized to your space and budget.</p>
+          <span class="go">Design my home grow</span>
+        </a>
+        <a href="#genetics">
+          <div class="ic"><svg viewBox="0 0 40 40"><path d="M20 36V14"/><path d="M20 14c-6 0-10-4-10-9 5 0 10 3 10 9zM20 14c6 0 10-4 10-9-5 0-10 3-10 9z"/><path d="M20 24c-5 0-8-3-8-7 4 0 8 3 8 7zM20 24c5 0 8-3 8-7-4 0-8 3-8 7z"/></svg></div>
+          <h3>Genetics</h3>
+          <p>Elite, tissue-culture-verified cultivars available as seed nationwide. Clones coming soon in Minnesota.</p>
+          <span class="go">Browse the library</span>
+        </a>
+        <a href="#beehive">
+          <div class="ic"><svg viewBox="0 0 40 40"><path d="M20 4l12 7v14l-12 7-12-7V11z"/><path d="M20 12l6 3.5v7L20 26l-6-3.5v-7z"/><path d="M8 32h24"/></svg></div>
+          <h3>The Beehive</h3>
+          <p>Free education from the rooms — grow breakdowns, hard-won lessons, grower Q&amp;A, and daily posts on Instagram. No paywall.</p>
+          <span class="go">Follow along</span>
+        </a>
+        <a href="#contact" aria-describedby="merchSoon">
+          <span class="soon" id="merchSoon">Coming soon</span>
+          <div class="ic"><svg viewBox="0 0 40 40"><path d="M12 8l-7 5 4 6 3-1v14h16V18l3 1 4-6-7-5c-2 3-5 4-8 4s-6-1-8-4z"/></svg></div>
+          <h3>Merch</h3>
+          <p>For the Growers — pieces for people who live in the rooms. Subscribe and you'll hear first.</p>
+          <span class="go">Get notified</span>
+        </a>
+      </div>
+      <div class="partners rv">
+        <div class="ptext"><span class="kicker" style="margin:0 0 6px">Concept to Canopy partner network</span><p>One point of contact from an empty building to first harvest. Property, build, and security run by vetted partners — cultivation stays with HHS.</p><a href="#facility" class="btn btn-text" style="margin-top:12px">How the network works <i></i></a></div>
+        <div class="plogos">
+          <!-- PARTNER LOGOS: replace each div with <img src="images/logo-ri.png" alt="RI Properties"> etc. -->
+          <div class="plogo">RI Properties</div>
+          <div class="plogo">Licensed construction partner</div>
+          <div class="plogo">Harvest Security Solutions LLC</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- THE BEEHIVE — free education + follow -->
+  <div class="section beehive-home honey">
+    <div class="wrap">
+      <div class="head rv" style="display:flex;justify-content:space-between;align-items:flex-end;gap:24px;max-width:none;flex-wrap:wrap">
+        <div>
+          <span class="kicker">The Beehive</span>
+          <h2>Free education from the rooms.</h2>
+          <p>Fourteen years of commercial cultivation, written down and given away — because a better-informed grower is good for the plant and good for the industry.</p>
+        </div>
+        <a href="#beehive" class="btn btn-text">Everything in The Beehive <i></i></a>
+      </div>
+      <div class="note-list rv" id="homeNotes"></div>
+      <div class="follow rv">
+        <div class="follow-copy">
+          <h3>Daily, on Instagram.</h3>
+          <p>Rooms, harvests, builds, and the numbers behind them — posted as they happen.</p>
+          <a href="https://www.instagram.com/Honey.Harvest.Solutions" target="_blank" rel="noopener" class="btn btn-gold ig-btn"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>Follow @Honey.Harvest.Solutions</a>
+        </div>
+        <div class="ig-grid" id="homePosts"></div>
+      </div>
+      <div class="ask-teaser rv">
+        <div><span class="kicker" style="margin-bottom:6px">Ask a Grower</span><h3>Stuck on something? Ask.</h3><p>Real questions from growers, answered publicly so the next person with the same problem finds it too.</p></div>
+        <a href="#ask" class="btn btn-line">Ask a question</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- GROWER IN RESIDENCE FEATURE -->
+  <div class="feature rv">
+    <div class="grid">
+      <div class="frame">
+        <img class="photo" src="images/gir-feature.jpg" loading="lazy" data-slot="gir-feature · Tyler in a flower room, 1600×1400" alt="Late-flower canopy under HPS">
+      </div>
+      <div class="copy">
+        <span class="kicker">Grower in Residence</span>
+        <h2>A grower who changes the math for the whole business.</h2>
+        <p style="margin-top:18px;color:var(--cream-2)">Not a stopgap. Not a temp. An operator embedded in your facility for a defined engagement — with authority over the plants and accountability for the results.</p>
+        <ul>
+          <li>Launch a new facility to a clean, repeatable first harvest</li>
+          <li>Turn around a struggling room, a struggling program, or a struggling team</li>
+          <li>Drive cost per gram down without trading away quality</li>
+          <li>Build the SOPs, dashboards, and people that let you scale</li>
+        </ul>
+        <a href="#gir" class="btn btn-gold">How it works</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- PROOF -->
+  <div class="section">
+    <div class="wrap">
+      <div class="head rv">
+        <span class="kicker">Proof</span>
+        <h2>Fourteen years in the rooms. The numbers follow.</h2>
+      </div>
+    </div>
+    <div class="stats rv">
+      <div class="stat"><b><span data-count="14">0</span><small>+</small></b><span>years of commercial cultivation across multiple multi-state operators</span></div>
+      <div class="stat"><b><span data-count="100">0</span><small>g</small></b><span>per square foot on flagship rooms — 60–100 g/sq ft is the working range</span></div>
+      <div class="stat"><b><span data-count="30">0</span><small>%</small></b><span>THC and higher on flagship genetics, tissue-culture verified</span></div>
+      <div class="stat"><b>$<span data-count="1">0</span><small>/g</small></b><span>cultivation OPEX target that quality doesn't have to be sacrificed to hit</span></div>
+    </div>
+    <div class="wrap" style="margin-top:56px">
+      <div class="gallery rv" id="homeGallery">
+        <button data-lb="proof-01 · wide flower room, 1600×1200" data-cap="Full-canopy flower room at week 6"><img class="photo" src="images/proof-01.jpg" loading="lazy" data-slot="proof-01 · wide flower room" alt="Flower room at week six, full canopy"></button>
+        <button data-lb="proof-02 · macro bud, 1200×1200" data-cap="Foreign Kush Mints, day 63"><img class="photo" src="images/proof-02.jpg" loading="lazy" data-slot="proof-02 · macro bud" alt="Macro of a finished cola"></button>
+        <button data-lb="proof-03 · fertigation room, 1200×1200" data-cap="Fertigation skid and injection room"><img class="photo" src="images/proof-03.jpg" loading="lazy" data-slot="proof-03 · fertigation" alt="Fertigation room"></button>
+        <button data-lb="proof-04 · dry room, 1200×1600" data-cap="Hang-dry room, 60°F / 60% RH"><img class="photo" src="images/proof-04.jpg" loading="lazy" data-slot="proof-04 · dry room" alt="Dry room with hanging plants"></button>
+        <button data-lb="proof-05 · veg bench, 1200×1200" data-cap="Veg bench, week 2"><img class="photo" src="images/proof-05.jpg" loading="lazy" data-slot="proof-05 · veg" alt="Veg bench"></button>
+        <button data-lb="proof-06 · mother room, 1200×1200" data-cap="Mother and propagation room"><img class="photo" src="images/proof-06.jpg" loading="lazy" data-slot="proof-06 · mother room" alt="Mother room"></button>
+      </div>
+      <div style="margin-top:36px" class="rv"><a href="#about" class="btn btn-text">The full story and a case study <i></i></a></div>
+    </div>
+  </div>
+
+  <!-- SUBSCRIBE / CONTACT BAND -->
+  <div class="band honey">
+    <div class="glow"></div>
+    <div class="wrap inner">
+      <div class="rv">
+        <span class="kicker">Start here</span>
+        <h2>Tell us what you're building.</h2>
+        <p style="margin-top:18px;color:var(--cream-2)">A floor plan, a struggling room, a first grow, a license you just won — send the shape of it and you'll get a straight answer from a grower, usually within two business days.</p>
+        <p style="margin-top:26px;font-size:19px"><a href="tel:+17203838414" class="gold">720-383-8414</a><span class="small" style="margin-left:10px">call or text</span></p>
+        <p style="margin-top:8px;font-size:19px"><a href="mailto:tylerking@honeyharvestsolutions.com" class="gold">tylerking@honeyharvestsolutions.com</a></p>
+        <p style="margin-top:8px;font-size:17px"><a href="https://www.instagram.com/Honey.Harvest.Solutions" target="_blank" rel="noopener" class="gold">@Honey.Harvest.Solutions</a><span class="small" style="margin-left:10px">DMs open</span></p>
+      </div>
+      <form class="form rv" data-form="contact" name="contact" method="POST" data-netlify="true" netlify-honeypot="website" novalidate>
+<input type="hidden" name="form-name" value="contact"><p class="sr" aria-hidden="true"><label>Leave this empty<input name="website" tabindex="-1" autocomplete="off"></label></p>
+        <div class="row hide-on-sent">
+          <label>Name<input type="text" name="name" required autocomplete="name"></label>
+          <label>Email<input type="email" name="email" required autocomplete="email"></label>
+        </div>
+        <div class="row hide-on-sent">
+          <label>Phone (optional)<input type="tel" name="phone" autocomplete="tel"></label>
+          <label>I'm interested in
+            <select name="subject"><option>Facility Design — Concept to Canopy</option><option>Grower in Residence</option><option>Home Grow Design</option><option>Genetics — Seed order</option><option>Something else</option></select>
+          </label>
+        </div>
+        <label class="hide-on-sent">The project<textarea name="message" required placeholder="Space, stage, timeline, and what's in the way."></textarea></label>
+        <button class="btn btn-gold hide-on-sent" type="submit">Send</button>
+        <p class="fine hide-on-sent">Nationwide. 21+ only. Your details are never shared.</p>
+        <div class="ok">Sent. You'll hear back from us directly within a couple of business days.</div>
+      </form>
+    </div>
+  </div>
+
+</section>
+
+<!-- ================================================================
+     WORK WITH ME
+     ================================================================ -->
+<section class="page" data-page="work" id="page-work">
+  <div class="wrap page-hero">
+    <span class="kicker">Work with us</span>
+    <h1>Growers who build, run, and fix grows.</h1>
+    <p class="lede">Facility design, embedded cultivation, home grow design, and genetics — the same standard at every scale. Pick the one that fits where you are, or <a href="#contact" class="gold" style="border-bottom:1px solid var(--gold-deep)">just tell us what you're building</a>.</p>
+  </div>
+  <div class="wrap">
+
+    <div class="offer-row rv" id="work-facility">
+      <div>
+        <h3>Facility Design <em>&amp; Buildout</em></h3>
+        <div class="who">Concept to Canopy · commercial operators, license holders, investors · nationwide</div>
+      </div>
+      <div class="body">
+        <p>Full-chain commercial design — cultivation, post-harvest, and packaging/production — engineered as one system so the rooms, the workflow, and the numbers agree with each other before a wall goes up.</p>
+        <p>If you want the whole build handled, we stay the cultivation throughline while a vetted partner network runs property, construction, and security. One point of contact from an empty building to first harvest.</p>
+        <ul>
+          <li>Room layouts, canopy math, and workflow from clone to package</li>
+          <li>HVAC and mechanical sizing, lighting, airflow, benching, fertigation, and controls</li>
+          <li>Craft, Mid-Scale, and Full Facility design packages — or fully custom</li>
+        </ul>
+        <a href="#facility" class="btn btn-gold">See designs and the network</a>
+      </div>
+    </div>
+
+    <div class="offer-row rv" id="work-home">
+      <div>
+        <h3>Home Grow <em>Design</em></h3>
+        <div class="who">Flat rate · home and new growers · nationwide</div>
+      </div>
+      <div class="body">
+        <p>New legal markets are opening all over the country, and most people's first grow is a pile of forum advice and a cart full of the wrong gear. This fixes that.</p>
+        <p>Send us your space, budget, and goal. You get a complete, productized setup design: the tent or room layout, lighting, environment control, medium and feed plan, a shopping list that isn't padded, and a first-run schedule — in language a first-timer can follow.</p>
+        <ul>
+          <li>One flat rate, one clear deliverable, delivered within a week</li>
+          <li>Sized for closets, tents, spare rooms, and small garages</li>
+          <li>Built on the same principles we use at commercial scale, scaled down honestly</li>
+        </ul>
+        <a href="#contact" class="btn btn-gold" data-subject="Home Grow Design">Start a home grow design</a>
+      </div>
+    </div>
+
+    <div class="offer-row rv" id="work-gir">
+      <div>
+        <h3>Grower in <em>Residence</em></h3>
+        <div class="who">Embedded engagements · boutique to MSO · nationwide</div>
+      </div>
+      <div class="body">
+        <p>A proven grower dropped into your operation for a defined stretch — to launch, turn around, optimize, train, systematize, or cover a gap. We take responsibility for the plants and leave behind a program that runs without us.</p>
+        <p>The point is not to fill a chair. It's to move yield, quality, cost per gram, crop-failure risk, team capability, and your ability to scale — all at once.</p>
+        <a href="#gir" class="btn btn-gold">How Grower in Residence works</a>
+      </div>
+    </div>
+
+    <div class="offer-row rv" id="work-genetics">
+      <div>
+        <h3>Genetics</h3>
+        <div class="who">Seed nationwide · clones coming soon in Minnesota</div>
+      </div>
+      <div class="body">
+        <p>The cultivars we actually run — pheno-hunted for 30%+ THC, 3%+ terpenes, and real yield, then tissue-culture cleaned so what you receive is what I grew. Available as seed nationwide; clones for local pickup in Minnesota when the program opens.</p>
+        <a href="#genetics" class="btn btn-gold">Browse the library</a>
+      </div>
+    </div>
+
+    <div class="offer-row rv" id="work-seminars">
+      <div>
+        <h3>Seminars</h3>
+        <div class="who">Coming soon · in person and online</div>
+      </div>
+      <div class="body">
+        <p>Half-day and full-day working sessions for cultivation teams: crop steering, environment, the cure, and running a room by the numbers. Subscribers hear first.</p>
+        <a href="#contact" class="btn btn-line" data-subject="Seminars">Tell us when seminars open</a>
+      </div>
+    </div>
+
+  </div>
+  <div class="section tight"><div class="wrap rv"><p class="lede">Not sure which fits? <a href="#contact" class="gold" style="border-bottom:1px solid var(--gold-deep)">Send us a note</a> with what you're growing and what's in the way, or call <a href="tel:+17203838414" class="gold">720-383-8414</a>. You'll get a straight answer.</p></div></div>
+</section>
+
+<!-- ================================================================
+     FACILITY DESIGN — CONCEPT TO CANOPY
+     ================================================================ -->
+<section class="page" data-page="facility" id="page-facility">
+  <div class="page-hero img">
+    <div class="bg"><img class="photo" src="images/facility-hero.jpg" loading="lazy" data-slot="facility-hero · wide facility interior or build-out, 2400×1400" alt=""></div>
+    <div class="wrap">
+      <span class="kicker">Facility design &amp; buildout</span>
+      <h1>Concept to Canopy.</h1>
+      <p class="lede">Cultivation, post-harvest, and packaging designed as one system — and, if you want it, built through a partner network with one point of contact from empty building to first harvest.</p>
+    </div>
+  </div>
+
+  <div class="section tight">
+    <div class="wrap">
+      <div class="split rv">
+        <div>
+          <h2>Designed by someone who has to run it afterward.</h2>
+        </div>
+        <div>
+          <p class="lede" style="font-size:22px">Most facilities are designed by people who will never harvest a room in them. The rooms are pretty, the mechanicals are undersized at week six, the dry room is an afterthought, and the workflow makes every tech walk twice as far as they should.</p>
+          <p style="margin-top:18px;color:var(--cream-2)">We design the way we operate: canopy first, then environment, then the flow of plants and people through the building — from propagation through veg, flower, dry, cure, trim, and package. Every room gets sized against a real production model, not a square-footage guess.</p>
+        </div>
+      </div>
+      <div class="caps rv" style="margin-top:56px">
+        <div><b>Room layouts</b><span>Canopy math, aisle logic, and plant flow across every stage</span></div>
+        <div><b>HVAC &amp; mechanical</b><span>Sensible and latent load sizing for the plants you'll actually grow</span></div>
+        <div><b>Lighting</b><span>Fixture selection, PPFD targets, and spectrum by stage</span></div>
+        <div><b>Airflow</b><span>Under-canopy and overhead circulation designed as a system</span></div>
+        <div><b>Benching</b><span>Rolling, tiered, or fixed — chosen for labor, not looks</span></div>
+        <div><b>Fertigation</b><span>Injection, recipes, zoning, and runoff handling</span></div>
+        <div><b>Controls</b><span>Room controllers, sensors, and the dashboards to run it by the numbers</span></div>
+        <div><b>Post-harvest &amp; packaging</b><span>Dry, cure, trim, and production sized to the flower coming out of the rooms</span></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- DESIGN SET BROWSER -->
+  <div class="section tight" style="padding-top:0">
+    <div class="wrap">
+      <div class="head rv">
+        <span class="kicker">A real design set</span>
+        <h2>What you actually get.</h2>
+        <p>Sheets from the AVS MN Phase 1 design package — a craft-scale, four-room program. Floor plan, lighting, dry room, mechanical, airflow, and 3D cutaways, all in one coordinated set built to be handed to an engineer and a contractor.</p>
+      </div>
+      <div class="sheets rv">
+        <div class="list" id="sheetList" role="tablist" aria-label="Design sheets"></div>
+        <div>
+          <div class="view"><img id="sheetImg" alt="" loading="lazy"><button class="open" id="sheetOpen">VIEW FULL SIZE</button></div>
+          <div class="cap"><div><h4 id="sheetTitle"></h4><p id="sheetDesc"></p></div><a href="#contact" class="btn btn-text" data-subject="Facility Design">Get a sample design package <i></i></a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- DESIGN PACKAGES -->
+  <div class="section">
+    <div class="wrap">
+      <div class="head rv">
+        <span class="kicker">Design packages</span>
+        <h2>Start from a proven shape.</h2>
+        <p>Each package is a complete design set I've refined across real builds, then tuned to your building, market, and budget. Browse them here; we'll adapt the right one together.</p>
+      </div>
+      <div class="pkgs rv">
+        <div class="pkg">
+          <div class="frame r43"><img class="photo" src="images/pkg-craft.jpg" loading="lazy" data-slot="pkg-craft · small flower room, 1200×900" alt="Craft-scale flower room"></div>
+          <div class="body">
+            <div class="sz">Craft · up to ~2,500 sq ft</div>
+            <h3>The Craft Build</h3>
+            <p>A tight four-room program for microbusiness and boutique licenses. Everything a great small grow needs and nothing it doesn't.</p>
+            <ul><li>Prop/veg, mother, dual flower, dry</li><li>Perpetual harvest cadence</li><li>Full mechanical and lighting design</li></ul>
+            <a href="#contact" class="btn btn-line" data-subject="Facility Design — Craft Build">Discuss this package</a>
+          </div>
+        </div>
+        <div class="pkg">
+          <div class="frame r43"><img class="photo" src="images/pkg-mid.jpg" loading="lazy" data-slot="pkg-mid · multi-room flower wing, 1200×900" alt="Mid-scale cultivation wing"></div>
+          <div class="body">
+            <div class="sz">Mid-Scale · ~5,000–15,000 sq ft</div>
+            <h3>The Mid-Scale Build</h3>
+            <p>Multi-room flower with a staggered cadence, a real post-harvest wing, and the controls to run it with a lean team.</p>
+            <ul><li>4–8 flower rooms on a weekly cadence</li><li>Dedicated dry, cure, and trim rooms</li><li>Zoned fertigation and room controllers</li></ul>
+            <a href="#contact" class="btn btn-line" data-subject="Facility Design — Mid-Scale Build">Discuss this package</a>
+          </div>
+        </div>
+        <div class="pkg">
+          <div class="frame r43"><img class="photo" src="images/pkg-full.jpg" loading="lazy" data-slot="pkg-full · large facility corridor, 1200×900" alt="Full-facility corridor"></div>
+          <div class="body">
+            <div class="sz">Full Facility · 15,000+ sq ft</div>
+            <h3>The Full Facility</h3>
+            <p>Cultivation through packaging and production under one roof, designed for throughput, compliance, and cost per gram from day one.</p>
+            <ul><li>Cultivation, post-harvest, packaging/production</li><li>Production modeling and labor design</li><li>Turnkey path through the partner network</li></ul>
+            <a href="#contact" class="btn btn-line" data-subject="Facility Design — Full Facility">Discuss this package</a>
+          </div>
+        </div>
+        <div class="pkg custom">
+          <div class="body" style="justify-content:center;min-height:100%">
+            <div class="sz">Custom</div>
+            <h3>Your building. Your market.</h3>
+            <p>Retrofits, expansions, greenhouse hybrids, and buildings that don't fit a template. Send us the floor plan and the goal.</p>
+            <a href="#contact" class="btn btn-gold" data-subject="Facility Design — Custom" style="margin-top:22px">Start a custom design</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- THE NETWORK -->
+  <div class="network section honey">
+    <div class="wrap">
+      <div class="head rv" style="max-width:820px">
+        <span class="kicker">The network</span>
+        <h2>Four lanes. One throughline.</h2>
+        <p>A turnkey build needs property, construction, security, and cultivation to move together. HHS quarterbacks the build as the cultivation throughline; each partner runs their own lane. We don't pretend to be all of it — we make sure all of it serves the plant.</p>
+      </div>
+      <div class="lanes rv">
+        <div class="lane">
+          <div class="hex"><svg viewBox="0 0 24 24"><path d="M3 21V9l9-6 9 6v12"/><path d="M3 21h18M9 21v-6h6v6"/></svg></div>
+          <div class="stage">Property</div>
+          <div class="who">RI Properties</div>
+          <p>Site selection, real estate, and property strategy. Principal: Jesse Riley.</p>
+          <!-- PARTNER LOGO: replace this div with <img src="images/logo-ri-properties.png" alt="RI Properties" style="height:44px;margin:18px auto 0"> -->
+          <div class="logo">RI PROPERTIES LOGO</div>
+        </div>
+        <div class="lane">
+          <div class="hex"><svg viewBox="0 0 24 24"><path d="M14 4l6 6-9 9H5v-6z"/><path d="M12 6l6 6"/></svg></div>
+          <div class="stage">Build</div>
+          <div class="who">Licensed construction partner</div>
+          <p>Buildout and general contracting by a licensed partner with cannabis facility experience.</p>
+          <div class="logo">CONSTRUCTION PARTNER</div>
+        </div>
+        <div class="lane">
+          <div class="hex"><svg viewBox="0 0 24 24"><path d="M12 2l8 3v6c0 5-3.5 9-8 11-4.5-2-8-6-8-11V5z"/><path d="M9 12l2 2 4-4"/></svg></div>
+          <div class="stage">Secure</div>
+          <div class="who">Harvest Security Solutions LLC</div>
+          <p>Cannabis-specialized security — surveillance, access control, vaults, and compliance-grade design and install, plus ongoing monitoring.</p>
+          <!-- PARTNER LOGO: replace with <img src="images/logo-harvest-security.png" alt="Harvest Security Solutions" style="height:44px;margin:18px auto 0"> -->
+          <div class="logo">HARVEST SECURITY LOGO</div>
+        </div>
+        <div class="lane me">
+          <div class="hex"><svg viewBox="0 0 24 24"><path d="M12 22V10"/><path d="M12 10c-4 0-7-3-7-7 4 0 7 3 7 7zM12 10c4 0 7-3 7-7-4 0-7 3-7 7z"/></svg></div>
+          <div class="stage">Grow</div>
+          <div class="who">Tyler King · Honey Harvest Solutions</div>
+          <p>Cultivation design, commissioning, and the first harvest — the throughline from concept to canopy.</p>
+          <div class="logo" style="border-color:var(--gold-deep);color:var(--gold)">HHS</div>
+        </div>
+      </div>
+      <p class="small rv" style="margin-top:40px;text-align:center;max-width:none">Design, Grower in Residence, and Genetics are available nationwide. The full turnkey buildout runs through the partner network.</p>
+    </div>
+  </div>
+
+  <!-- PROCESS -->
+  <div class="section">
+    <div class="wrap">
+      <div class="head rv">
+        <span class="kicker">The process</span>
+        <h2>From a floor plan to a first harvest.</h2>
+      </div>
+      <div class="steps rv">
+        <div class="step"><h4>Discovery</h4><p>Your market, license, building, budget, and the flower you need to produce. We set the production model before anything gets drawn.</p></div>
+        <div class="step"><h4>Design</h4><p>Room layouts, mechanical and lighting sizing, benching, fertigation, controls, and the post-harvest flow — as a complete, buildable package.</p></div>
+        <div class="step"><h4>Build &amp; commission</h4><p>Through the network or with your own team. We commission every room against the design before a plant goes in.</p></div>
+        <div class="step"><h4>First harvest</h4><p>We run or oversee the first cycle, tune the program, and hand off SOPs and dashboards your team can carry forward.</p></div>
+      </div>
+      <div class="rv" style="margin-top:56px;display:flex;gap:16px;flex-wrap:wrap">
+        <a href="#contact" class="btn btn-gold" data-subject="Facility Design">Talk about a facility</a>
+        <a href="tel:+17203838414" class="btn btn-line">Call 720-383-8414</a>
+        <a href="#about" class="btn btn-line">Read the case study</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================================================================
+     GROWER IN RESIDENCE
+     ================================================================ -->
+<section class="page" data-page="gir" id="page-gir">
+  <div class="page-hero img">
+    <div class="bg"><img class="photo" src="images/gir-hero.jpg" loading="lazy" data-slot="gir-hero · Tyler at the bench or in the room, 2400×1400" alt=""></div>
+    <div class="wrap">
+      <span class="kicker">Grower in Residence</span>
+      <h1>A force multiplier, not a stopgap.</h1>
+      <p class="lede">A proven grower embedded in your operation — with authority over the plants and accountability for the numbers — for as long as it takes to change the trajectory.</p>
+    </div>
+  </div>
+
+  <div class="section tight">
+    <div class="wrap">
+      <div class="split rv">
+        <div><h2>What it does for the business.</h2></div>
+        <div>
+          <p class="lede" style="font-size:22px">A cultivation program touches every line on the P&amp;L. When it's run well, yield goes up, quality goes up, cost per gram goes down, crop-failure risk goes down, and the team gets better. Grower in Residence exists to move all of those at once.</p>
+          <p style="margin-top:18px;color:var(--cream-2)">We don't arrive with a binder and leave with an invoice. We run the rooms alongside your people, fix what's actually wrong, and build the systems that keep it fixed after we're gone.</p>
+          <div class="outcomes">
+            <div class="outcome"><b>Yield</b><span>Move rooms toward 60–100 g/sq ft with crop steering, environment, and genetics that fit the space.</span></div>
+            <div class="outcome"><b>Quality</b><span>Consistent, top-shelf flower — potency, terpenes, and a cure that actually finishes.</span></div>
+            <div class="outcome"><b>Cost / gram</b><span>Labor design, input discipline, and fewer mistakes. ~$1/g cultivation OPEX is a real target.</span></div>
+            <div class="outcome"><b>Risk</b><span>Fewer failed rooms. Early-warning dashboards, IPM programs, and someone who's seen it before.</span></div>
+            <div class="outcome"><b>Team</b><span>Techs and leads trained on a real program, with SOPs they helped write.</span></div>
+            <div class="outcome"><b>Scale</b><span>A program that repeats room after room, so growth doesn't mean starting over.</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="wrap">
+      <div class="head rv"><span class="kicker">Ways it helps</span><h2>Bring a grower in to…</h2></div>
+      <div class="ways rv">
+        <div class="way"><h4>Launch</h4><p>Commission a new facility, dial in the first cycles, and reach a repeatable harvest without the expensive first-year lessons.</p></div>
+        <div class="way"><h4>Turn around</h4><p>Diagnose a struggling room or program — nutrition, environment, IPM, process — and get it producing again.</p></div>
+        <div class="way"><h4>Optimize</h4><p>Take a working grow to its ceiling: crop steering, yield, potency, and cost per gram.</p></div>
+        <div class="way"><h4>Train</h4><p>Level up techs, leads, and managers on the floor, with real plants, over real weeks.</p></div>
+        <div class="way"><h4>Systematize</h4><p>SOPs, dashboards, harvest cadence, quality grading — the operating system a grow needs to scale.</p></div>
+        <div class="way"><h4>Cover a gap</h4><p>A head-of-cultivation departure doesn't have to cost you a cycle. We hold the rooms and help hire the right replacement.</p></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section tight">
+    <div class="wrap">
+      <div class="head rv"><span class="kicker">The process</span><h2>How an engagement runs.</h2></div>
+      <div class="steps rv">
+        <div class="step"><h4>Walk the rooms</h4><p>A candid assessment of plants, environment, process, and people. You get the findings whether or not we go further.</p></div>
+        <div class="step"><h4>Set the targets</h4><p>Specific numbers — yield, quality grade, cost per gram, cycle time — and the engagement length it will take to hit them.</p></div>
+        <div class="step"><h4>Run the program</h4><p>On the floor, in the rooms, on the dashboards. Weekly reporting so ownership always knows where things stand.</p></div>
+        <div class="step"><h4>Hand off</h4><p>Systems documented, team trained, and a clean transition. The goal is that you don't need us anymore.</p></div>
+      </div>
+      <div class="rv" style="margin-top:56px"><a href="#contact" class="btn btn-gold" data-subject="Grower in Residence">Talk about an engagement</a> <a href="tel:+17203838414" class="btn btn-line" style="margin-left:10px">Call 720-383-8414</a></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================================================================
+     THE MENU — philosophy
+     ================================================================ -->
+<section class="page honey" data-page="menu" id="page-menu">
+  <div class="wrap menu-hero">
+    <span class="kicker">The Menu</span>
+    <h1>The bar isn't average.<br>It's the best.</h1>
+    <p class="lede">What makes great cannabis great — and the standard every room we touch is held to. This is the why behind everything else on this site.</p>
+  </div>
+  <div class="section tight">
+    <div class="wrap">
+      <div class="split rv">
+        <div><h2>Plant first. Always.</h2></div>
+        <div>
+          <p class="lede" style="font-size:22px">Every decision in a grow is a decision about the plant. The environment, the feed, the schedule, the team, the building — they exist to give a plant what it needs to express its genetics fully. When the plant is the customer, quality stops being a marketing word.</p>
+          <p style="margin-top:18px;color:var(--cream-2)">We think about flower the way a great kitchen thinks about a plate: the ingredients, the technique, the timing, and the consistency all have to be right, every time, or it isn't the dish. Michelin-grade craft isn't a slogan. It's a way of holding ourselves to the top of the category instead of the middle.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="section">
+    <div class="wrap">
+      <div class="head rv"><span class="kicker">Six disciplines</span><h2>Craft is the sum of six things done well.</h2></div>
+      <div class="disc rv">
+        <article><div class="hex">I</div><div><h3>Genetics</h3><p>You cannot grow past the ceiling of the cultivar. Hunt for potency, terpenes, structure, and yield together — then keep the winners clean.</p></div></article>
+        <article><div class="hex">II</div><div><h3>Environment</h3><p>Light, temperature, humidity, CO₂, airflow, and root zone, steered by stage and by the numbers. The room is the plant's whole world.</p></div></article>
+        <article><div class="hex">III</div><div><h3>Process</h3><p>Repeatable systems for every task from clone to package. Great flower once is luck; great flower every cycle is process.</p></div></article>
+        <article><div class="hex">IV</div><div><h3>The Cure</h3><p>Where most flower is lost. A slow dry and a real cure finish what the room started — terpenes, smoothness, and shelf life.</p></div></article>
+        <article><div class="hex">V</div><div><h3>Consistency</h3><p>The same quality in room ten as in room one. Consistency is what separates a brand from a batch.</p></div></article>
+        <article><div class="hex">VI</div><div><h3>For the Plant</h3><p>Advance the industry, advance the plant. Share what works, raise the standard, and leave the craft better than you found it.</p></div></article>
+      </div>
+    </div>
+  </div>
+  <div class="manifesto rv">
+    <div class="wrap"><p>Great cannabis isn't grown by accident, and it isn't grown by average. <em>For the plant. For the growers.</em></p></div>
+  </div>
+</section>
+
+<!-- ================================================================
+     GENETICS
+     ================================================================ -->
+<section class="page" data-page="genetics" id="page-genetics">
+  <div class="wrap page-hero">
+    <span class="kicker">Genetics</span>
+    <h1>The cultivars we actually run.</h1>
+    <p class="lede">Pheno-hunted for potency, terpenes, and yield together, then tissue-culture cleaned. Available as seed nationwide. Clones coming soon in Minnesota.</p>
+    <div class="targets">
+      <div><b>30%+</b><span>THC target</span></div>
+      <div><b>3%+</b><span>total terpenes</span></div>
+      <div><b>~100 g</b><span>per sq ft hunt target</span></div>
+      <div><b>TC</b><span>tissue-culture verified</span></div>
+    </div>
+  </div>
+  <div class="section tight">
+    <div class="wrap">
+      <div class="strains rv" id="strains"></div>
+      <p class="small rv" style="margin-top:24px">Potency and terpene figures reflect in-house testing on flagship phenotypes and vary by grow. Lineage details are being finalized and will be confirmed with each order.</p>
+    </div>
+  </div>
+  <div class="band honey">
+    <div class="glow"></div>
+    <div class="wrap inner">
+      <div class="rv">
+        <span class="kicker">Clones · Minnesota</span>
+        <h2>Clean cuts, local pickup. Coming soon.</h2>
+        <p style="margin-top:18px;color:var(--cream-2)">Tissue-culture-verified clones of the library above, for growers in Minnesota. Join the waitlist and you'll get first access when the program opens — no obligation.</p>
+      </div>
+      <form class="form rv" data-form="clones" name="clone-waitlist" method="POST" data-netlify="true" netlify-honeypot="website" novalidate>
+<input type="hidden" name="form-name" value="clone-waitlist"><p class="sr" aria-hidden="true"><label>Leave this empty<input name="website" tabindex="-1" autocomplete="off"></label></p>
+        <label class="hide-on-sent">Email address<input type="email" name="email" placeholder="you@yourgrow.com" required></label>
+        <div class="row hide-on-sent">
+          <label>Cultivars you're after<input type="text" name="cultivars" placeholder="e.g. GMO, Cap Junky"></label>
+          <label>Cuts (approx.)<input type="number" name="qty" min="1" placeholder="12"></label>
+        </div>
+        <button class="btn btn-gold hide-on-sent" type="submit">Join the clone waitlist</button>
+        <p class="fine hide-on-sent">Minnesota pickup only. 21+ and in compliance with state law.</p>
+        <div class="ok">You're on the waitlist. You'll hear from us before the public does.</div>
+      </form>
+    </div>
+  </div>
+  <div class="section tight"><div class="wrap rv"><a href="#contact" class="btn btn-gold" data-subject="Genetics — Seed order">Order seed</a></div></div>
+</section>
+
+<!-- ================================================================
+     THE BEEHIVE — field notes
+     ================================================================ -->
+<section class="page" data-page="beehive" id="page-beehive">
+  <div id="beehiveList">
+    <div class="wrap page-hero">
+      <span class="kicker">The Beehive</span>
+      <h1>Free education from fourteen years in the rooms.</h1>
+      <p class="lede">Grow breakdowns, hard-won lessons, grower Q&amp;A, and daily posts — shared openly, no paywall. Read it, use it, and reach out when you want to go deeper.</p>
+      <div class="channels">
+        <a href="https://www.instagram.com/Honey.Harvest.Solutions" target="_blank" rel="noopener" class="chan"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg><span><b>Instagram</b>@Honey.Harvest.Solutions</span></a>
+        <!-- MORE CHANNELS: copy a .chan link for YouTube / TikTok / LinkedIn when those accounts exist -->
+        <a href="#ask" class="chan"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h16v11H9l-5 4z"/><path d="M9 9h6M9 12h4"/></svg><span><b>Ask a Grower</b>Public Q&amp;A</span></a>
+        <a href="#contact" class="chan"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16v12H4z"/><path d="M4 7l8 6 8-6"/></svg><span><b>Email list</b>Occasional, no drip</span></a>
+      </div>
+    </div>
+    <div class="wrap section tight" style="padding-top:0">
+      <div class="head rv" style="margin-bottom:28px"><span class="kicker">Field notes</span><h2 style="font-size:36px">Breakdowns and lessons.</h2></div>
+      <div class="topics" id="topics" role="group" aria-label="Filter by topic"></div>
+      <div class="note-list" id="allNotes"></div>
+    </div>
+    <div class="wrap section tight">
+      <div class="head rv" style="display:flex;justify-content:space-between;align-items:flex-end;gap:24px;max-width:none;flex-wrap:wrap;margin-bottom:28px">
+        <div><span class="kicker">Instagram</span><h2 style="font-size:36px">Daily from the rooms.</h2></div>
+        <a href="https://www.instagram.com/Honey.Harvest.Solutions" target="_blank" rel="noopener" class="btn btn-text">Open Instagram <i></i></a>
+      </div>
+      <div class="ig-grid rv" id="allPosts"></div>
+    </div>
+    <div class="wrap section tight" style="padding-top:0">
+      <div class="head rv" style="margin-bottom:24px"><span class="kicker">Ask a Grower</span><h2 style="font-size:36px">Recently answered.</h2></div>
+      <div class="qa rv" id="qaTeaser"></div>
+      <p class="rv" style="margin-top:22px"><a href="#ask" class="btn btn-line">Ask your own question</a></p>
+    </div>
+    <div class="band honey">
+      <div class="glow"></div>
+      <div class="wrap inner">
+        <div class="rv"><span class="kicker">Email list</span><h2>When there's something worth sending.</h2><p style="margin-top:18px;color:var(--cream-2)">A breakdown, a lesson, a number. No drip campaigns. Unsubscribe anytime.</p></div>
+        <form class="form rv" data-form="subscribe" name="email-list" method="POST" data-netlify="true" netlify-honeypot="website" novalidate>
+<input type="hidden" name="form-name" value="email-list"><p class="sr" aria-hidden="true"><label>Leave this empty<input name="website" tabindex="-1" autocomplete="off"></label></p>
+          <label class="hide-on-sent">Email address<input type="email" name="email" placeholder="you@yourgrow.com" required autocomplete="email"></label>
+          <button class="btn btn-gold hide-on-sent" type="submit">Subscribe</button>
+          <p class="fine hide-on-sent">21+ only. Your address is never shared.</p>
+          <div class="ok">You're on the list.</div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div id="beehiveReader" class="wrap section" hidden>
+    <div class="article" id="articleBody"></div>
+  </div>
+</section>
+
+<!-- ================================================================
+     ASK A GROWER
+     ================================================================ -->
+<section class="page" data-page="ask" id="page-ask">
+  <div class="wrap page-hero">
+    <span class="kicker">Ask a Grower</span>
+    <h1>Real questions. Straight answers.</h1>
+    <p class="lede">Send us what's stumping you. The best questions get answered here, publicly, so the next grower with the same problem finds it too.</p>
+  </div>
+  <div class="wrap section tight" style="padding-top:0">
+    <div class="split">
+      <div class="rv">
+        <h2 style="font-size:36px">Answered</h2>
+        <div class="qa" style="margin-top:28px" id="qaList"></div>
+      </div>
+      <div class="rv">
+        <h2 style="font-size:36px">Ask yours</h2>
+        <form class="form" data-form="ask" name="ask-a-grower" method="POST" data-netlify="true" netlify-honeypot="website" style="margin-top:28px" novalidate>
+<input type="hidden" name="form-name" value="ask-a-grower"><p class="sr" aria-hidden="true"><label>Leave this empty<input name="website" tabindex="-1" autocomplete="off"></label></p>
+          <div class="row hide-on-sent">
+            <label>First name<input type="text" name="name" required autocomplete="given-name"></label>
+            <label>Email<input type="email" name="email" required autocomplete="email"></label>
+          </div>
+          <label class="hide-on-sent">Your setup
+            <select name="setup"><option>Home grow / tent</option><option>Small commercial</option><option>Multi-room commercial</option><option>Greenhouse</option><option>Still planning</option></select>
+          </label>
+          <label class="hide-on-sent">Your question<textarea name="question" required placeholder="Be specific — stage, medium, environment numbers, what you've tried."></textarea></label>
+          <label class="hide-on-sent" style="grid-template-columns:auto 1fr;align-items:center;gap:10px;display:grid"><input type="checkbox" name="public" checked style="width:auto"> Okay to publish my question (first name only)</label>
+          <button class="btn btn-gold hide-on-sent" type="submit">Send question</button>
+          <p class="fine hide-on-sent">We read every one. Not every one gets published, but every one gets a reply.</p>
+          <div class="ok">Got it. You'll get a reply from a grower directly — and if it's a good one, it'll show up here.</div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================================================================
+     ABOUT / PROOF
+     ================================================================ -->
+<section class="page" data-page="about" id="page-about">
+  <div class="wrap page-hero">
+    <span class="kicker">About &amp; proof</span>
+    <h1>Fourteen years in commercial rooms.</h1>
+  </div>
+  <div class="wrap">
+    <div class="split rv">
+      <div class="frame r45"><img class="photo" data-slot="tyler-portrait · 1200×1500" alt="Tyler King, commercial cannabis cultivator"></div>
+      <div>
+        <p class="lede">Honey Harvest Solutions is led by Tyler King, a commercial cultivator with fourteen-plus years across multiple multi-state operators — running facilities from propagation through post-harvest, building the teams and systems that keep them producing, and learning most of it the hard way so you don't have to.</p>
+        <p style="margin-top:18px;color:var(--cream-2)">I hold a B.S. in Horticulture from Ohio State, and I've directed cultivation at scale — fourteen-room facilities, weekly harvest cadences, fertigation and crop-steering programs, quality grading systems, and the dashboards that let ownership see the grow by the numbers. Honey Harvest Solutions is where I share that openly and work directly with growers who want to go deeper.</p>
+        <ul class="timeline">
+          <li><b>Director of Cultivation</b><span>Multi-room commercial facilities — flower, veg, mother/prop, post-harvest, and production oversight.</span></li>
+          <li><b>Multi-state operators</b><span>Cultivation leadership across several MSO programs, including a Curaleaf tenure.</span></li>
+          <li><b>Facility design &amp; commissioning</b><span>Layouts, mechanical sizing, lighting, fertigation, and controls for new builds and retrofits.</span></li>
+          <li><b>B.S. Horticulture, Ohio State University</b><span>The science under the craft.</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="section">
+    <div class="stats rv">
+      <div class="stat"><b><span data-count="14">0</span><small>+</small></b><span>years of commercial cultivation</span></div>
+      <div class="stat"><b>60–<span data-count="100">0</span><small>g</small></b><span>per square foot, the working yield range</span></div>
+      <div class="stat"><b><span data-count="30">0</span><small>%</small></b><span>THC and higher on flagship genetics</span></div>
+      <div class="stat"><b>$<span data-count="1">0</span><small>/g</small></b><span>cultivation OPEX target</span></div>
+    </div>
+  </div>
+  <div class="section tight">
+    <div class="wrap">
+      <div class="head rv"><span class="kicker">Case study</span><h2>Four rooms, 2,420 square feet, designed to run itself.</h2></div>
+      <div class="case rv">
+        <div>
+          <p class="lede" style="font-size:22px">A craft-scale license holder had a 2,420 sq ft building, a tight budget, and a plan drawn by someone who'd never harvested a room. The layout wasted a third of the canopy, the HVAC was sized for offices, and there was no dry room at all.</p>
+          <p style="margin-top:16px;color:var(--cream-2)">I redesigned it as a four-room perpetual program: propagation/veg, a mother room, a dedicated dry room, and dual flower rooms on a staggered cadence — with mechanical sizing built from the actual transpiration load, a lighting plan by stage, benching chosen for labor, zoned fertigation, and room controllers feeding a single dashboard.</p>
+          <dl>
+            <dt>Footprint</dt><dd>~2,420 sq ft, four rooms</dd>
+            <dt>Rooms</dt><dd>Propagation/veg · Mother · Dry · Flower ×2</dd>
+            <dt>Scope</dt><dd>Layout, HVAC/mechanical sizing, lighting design, in-rack airflow, dry room, benching, fertigation, controls</dd>
+            <dt>Cadence</dt><dd>Staggered dual-flower perpetual harvest</dd>
+            <dt>Set</dt><dd>A100 · A200 · A201 · A300 · A301 · M200 · M300 · M301</dd>
+            <dt>Client</dt><dd>AVS MN — New Operations, Phase 1</dd>
+          </dl>
+        </div>
+        <div style="display:grid;gap:10px">
+          <div class="frame r43" style="background:#fff"><button data-sheet="A300" style="position:absolute;inset:0;padding:0;width:100%"><img src="images/designs/A300.jpg" loading="lazy" alt="Facility cutaway isometric" style="width:100%;height:100%;object-fit:cover"></button></div>
+          <div class="sheet-strip">
+            <button data-sheet="A100" aria-label="Floor plan A100"><img src="images/designs/A100-thumb.jpg" loading="lazy" alt=""></button>
+            <button data-sheet="A200" aria-label="Lighting layout A200"><img src="images/designs/A200-thumb.jpg" loading="lazy" alt=""></button>
+            <button data-sheet="M200" aria-label="Mechanical plan M200"><img src="images/designs/M200-thumb.jpg" loading="lazy" alt=""></button>
+            <button data-sheet="M300" aria-label="Flower room 3D M300"><img src="images/designs/M300-thumb.jpg" loading="lazy" alt=""></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="section">
+    <div class="wrap">
+      <div class="head rv"><span class="kicker">The rooms</span><h2>Real facilities. Real flower.</h2></div>
+      <div class="gallery rv">
+        <button data-lb="about-01 · 1600×1200" data-cap="Flower room, full canopy"><img class="photo" src="images/about-01.jpg" loading="lazy" data-slot="about-01 · wide room" alt="Flower room"></button>
+        <button data-lb="about-02 · 1200×1200" data-cap="Macro, day 60"><img class="photo" src="images/about-02.jpg" loading="lazy" data-slot="about-02 · macro" alt="Macro bud"></button>
+        <button data-lb="about-03 · 1200×1200" data-cap="Rolling benches, veg"><img class="photo" src="images/about-03.jpg" loading="lazy" data-slot="about-03 · benches" alt="Veg benches"></button>
+        <button data-lb="about-04 · 1200×1600" data-cap="Post-harvest"><img class="photo" src="images/about-04.jpg" loading="lazy" data-slot="about-04 · post harvest" alt="Post-harvest room"></button>
+        <button data-lb="about-05 · 1200×1200" data-cap="Fertigation skid"><img class="photo" src="images/about-05.jpg" loading="lazy" data-slot="about-05 · fertigation" alt="Fertigation"></button>
+        <button data-lb="about-06 · 1200×1200" data-cap="Mother room"><img class="photo" src="images/about-06.jpg" loading="lazy" data-slot="about-06 · mother room" alt="Mother room"></button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================================================================
+     CONTACT
+     ================================================================ -->
+<section class="page" data-page="contact" id="page-contact">
+  <div class="wrap page-hero">
+    <span class="kicker">Contact</span>
+    <h1>Tell us what you're building.</h1>
+    <p class="lede">Nationwide. Home growers, craft operators, and MSOs all welcome. Send the shape of the project and you'll get a straight answer from a grower.</p>
+  </div>
+  <div class="wrap section tight" style="padding-top:0">
+    <div class="split rev">
+      <form class="form rv" data-form="contact" name="contact" method="POST" data-netlify="true" netlify-honeypot="website" novalidate>
+<input type="hidden" name="form-name" value="contact"><p class="sr" aria-hidden="true"><label>Leave this empty<input name="website" tabindex="-1" autocomplete="off"></label></p>
+        <div class="row hide-on-sent">
+          <label>Name<input type="text" name="name" required autocomplete="name"></label>
+          <label>Email<input type="email" name="email" required autocomplete="email"></label>
+        </div>
+        <div class="row hide-on-sent">
+          <label>I'm interested in
+            <select name="subject" id="contactSubject">
+              <option>Facility Design — Concept to Canopy</option>
+              <option>Home Grow Design</option>
+              <option>Grower in Residence</option>
+              <option>Genetics — Seed order</option>
+              <option>Seminars</option>
+              <option>Merch</option>
+              <option>Something else</option>
+            </select>
+          </label>
+          <label>Location (state)<input type="text" name="state" placeholder="e.g. Ohio" autocomplete="address-level1"></label>
+        </div>
+        <label class="hide-on-sent">The project<textarea name="message" required placeholder="Space, stage, timeline, budget range if you have one, and what's in the way."></textarea></label>
+        <label class="hide-on-sent" style="grid-template-columns:auto 1fr;align-items:center;gap:10px;display:grid"><input type="checkbox" name="subscribe" checked style="width:auto"> Also subscribe me to the field notes</label>
+        <button class="btn btn-gold hide-on-sent" type="submit">Send</button>
+        <p class="fine hide-on-sent">Replies usually within two business days. Or call 720-383-8414.</p>
+        <div class="ok">Sent. I'll read it myself and reply within a couple of business days.</div>
+      </form>
+      <div class="rv">
+        <h2 style="font-size:36px">Direct</h2>
+        <p style="margin-top:22px;font-size:18px"><a href="mailto:tylerking@honeyharvestsolutions.com" class="gold">tylerking@honeyharvestsolutions.com</a></p>
+        <p style="margin-top:10px;font-size:18px"><a href="tel:+17203838414" class="gold">720-383-8414</a> <span class="small">call or text</span></p>
+        <p style="margin-top:10px;font-size:16px;color:var(--mute)">General: <a href="mailto:info@honeyharvestsolutions.com">info@honeyharvestsolutions.com</a></p>
+        <p style="margin-top:10px;font-size:18px"><a href="https://www.instagram.com/Honey.Harvest.Solutions" target="_blank" rel="noopener" class="gold">@Honey.Harvest.Solutions</a> <span class="small">on Instagram</span></p>
+        <div class="rule" style="margin:34px 0"></div>
+        <h4 style="color:var(--cream)">Where we work</h4>
+        <p style="margin-top:10px;color:var(--cream-2)">Design, Grower in Residence, and seed ship anywhere in the United States. Turnkey buildouts run through the partner network. Clones are Minnesota pickup only.</p>
+        <div class="frame r43" style="margin-top:34px"><img class="photo" src="images/contact.jpg" loading="lazy" data-slot="contact · moody room or bench detail, 1200×900" alt=""></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================================================================
+     LEGAL
+     ================================================================ -->
+<section class="page" data-page="legal" id="page-legal">
+  <div class="wrap page-hero"><span class="kicker">Legal</span><h1>Privacy, terms, and cookies.</h1><p class="lede">Placeholder language — replace with reviewed policies before launch.</p></div>
+  <div class="wrap section tight legal" style="padding-top:0;max-width:820px">
+    <h3 id="privacy">Privacy policy</h3>
+    <p>Honey Harvest Solutions collects only the information you give us through forms on this site — name, email, and the details of your question or project — and uses it to reply to you and, if you opt in, to send field notes. We never sell or share your information with third parties for marketing.</p>
+    <p>You can unsubscribe from any email at any time, and you can ask us to delete your information by writing to info@honeyharvestsolutions.com.</p>
+    <h3 id="terms">Terms of use</h3>
+    <p>Content on this site is educational and reflects the author's experience in legal, licensed cultivation. It is not legal advice. You are responsible for complying with the laws of your jurisdiction. This site is intended for adults 21 and older.</p>
+    <p>All written content, photography, and designs are © Honey Harvest Solutions unless noted. You may share links freely; please ask before republishing.</p>
+    <h3 id="cookies">Cookie policy</h3>
+    <p>Essential cookies keep the site working. With your consent, we may use basic analytics to understand which pages and field notes are most useful. You can change your choice any time by clearing your browser cookies.</p>
+  </div>
+</section>
+
+<!-- ================================================================
+     404
+     ================================================================ -->
+<section class="page" data-page="404" id="page-404">
+  <div class="wrap nf">
+    <div>
+      <b>404</b>
+      <h2 style="margin-top:12px">This room doesn't exist.</h2>
+      <p style="margin:18px auto 30px;color:var(--cream-2);max-width:40ch">The page you're looking for was moved, harvested, or never planted. Here's the way back.</p>
+      <a href="#home" class="btn btn-gold">Back to the hive</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+  <div class="wrap">
+    <div class="top">
+      <div>
+        <div class="brand"><img src="images/logo-gold.png" alt="Honey Harvest Solutions" style="height:120px;width:auto"></div>
+        <div class="tag">Your Growth. Our Craft.</div>
+        <p style="max-width:40ch">Cannabis facility design, Grower in Residence, home grow design, and genetics — from fourteen years of commercial cultivation. Nationwide.</p>
+      </div>
+      <div><h4>Learn</h4><ul><li><a href="#beehive">The Beehive</a></li><li><a href="#menu">The Menu</a></li><li><a href="#ask">Ask a Grower</a></li><li><a href="#about">About &amp; proof</a></li></ul></div>
+      <div><h4>Work with us</h4><ul><li><a href="#facility">Facility Design</a></li><li><a href="#work-home">Home Grow Design</a></li><li><a href="#gir">Grower in Residence</a></li><li><a href="#genetics">Genetics</a></li></ul></div>
+      <div><h4>Connect</h4><ul><li><a href="mailto:tylerking@honeyharvestsolutions.com">tylerking@honeyharvestsolutions.com</a></li><li><a href="tel:+17203838414">720-383-8414</a></li><li><a href="#contact">Start a project</a></li><li><a href="https://www.instagram.com/Honey.Harvest.Solutions" target="_blank" rel="noopener">@Honey.Harvest.Solutions</a></li><li><a href="#beehive">Email list</a></li></ul></div>
+    </div>
+    <div class="bottom">
+      <span>© <span id="year"></span> Honey Harvest Solutions. For the Growers. 21+ only.</span>
+      <span><a href="#legal">Privacy</a> &nbsp;·&nbsp; <a href="#legal">Terms</a> &nbsp;·&nbsp; <a href="#legal">Cookies</a></span>
+    </div>
+  </div>
+</footer>
+
+<!-- ===== UTILITIES ===== -->
+<button class="totop" id="totop" aria-label="Back to top"><svg viewBox="0 0 24 24"><path d="M12 19V5M5 12l7-7 7 7"/></svg></button>
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Photo"><button class="x" id="lbClose">CLOSE</button><button class="nav prev" id="lbPrev" aria-label="Previous sheet" hidden>‹</button><button class="nav next" id="lbNext" aria-label="Next sheet" hidden>›</button><img class="photo" id="lbImg" alt=""><div class="cap" id="lbCap"></div></div>
+<div class="modal" id="modal" role="dialog" aria-modal="true"><div class="card"><button class="x" id="modalClose">CLOSE</button><div id="modalBody"></div></div></div>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script src="content.js"></script>
+<script>
+/* Site content (NOTES, QA, STRAINS, POSTS, SHEETS) lives in content.js */
+
+
+
+/* ==========================================================
+   INSTAGRAM POSTS — no API needed. For each post: its URL, a square image,
+   and a short caption. Newest first. Until real posts are listed, tiles use
+   site photos and link to the profile.
+   ========================================================== */
+const postTile=p=>`<a href="${p.url}" target="_blank" rel="noopener" aria-label="${esc(p.cap)} — on Instagram"><img src="${p.img}" loading="lazy" alt=""><span>${esc(p.cap)}</span></a>`;
+
+/* ==========================================================
+   PLACEHOLDERS — any <img data-slot> without a src gets one
+   ========================================================== */
+function placeholder(label){
+  const svg = `<svg xmlns='http://www.w3.org/2000/svg' width='1200' height='900' viewBox='0 0 1200 900'>
+  <defs>
+    <linearGradient id='g' x1='0' y1='0' x2='1' y2='1'><stop offset='0' stop-color='#1a1a1c'/><stop offset='1' stop-color='#0c0c0d'/></linearGradient>
+    <pattern id='h' width='56' height='97' patternUnits='userSpaceOnUse'><g fill='none' stroke='#d9b45a' stroke-opacity='.13'><path d='M28 1l27 16v32L28 65 1 49V17z'/><path d='M28 65l27 16v32M28 65L1 81v32'/></g></pattern>
+    <radialGradient id='v' cx='.7' cy='.35' r='.8'><stop offset='0' stop-color='#d9b45a' stop-opacity='.16'/><stop offset='1' stop-color='#000' stop-opacity='0'/></radialGradient>
+  </defs>
+  <rect width='1200' height='900' fill='url(#g)'/><rect width='1200' height='900' fill='url(#h)'/><rect width='1200' height='900' fill='url(#v)'/>
+  <g transform='translate(600 400)'><path d='M0-48l42 24v48L0 48-42 24v-48z' fill='none' stroke='#d9b45a' stroke-opacity='.5' stroke-width='2'/><path d='M0-22l19 11v22L0 22-19 11v-22z' fill='#d9b45a' fill-opacity='.5'/></g>
+  <text x='600' y='500' text-anchor='middle' font-family='Jost, Arial, sans-serif' font-size='22' letter-spacing='4' fill='#8b8a84'>DROP PHOTO</text>
+  <text x='600' y='536' text-anchor='middle' font-family='Jost, Arial, sans-serif' font-size='20' fill='#d9b45a'>${label.replace(/&/g,'&amp;').replace(/</g,'&lt;')}</text>
+</svg>`;
+  return 'data:image/svg+xml;utf8,' + encodeURIComponent(svg);
+}
+const HAVE=new Set(["about-01", "about-02", "about-03", "about-04", "about-05", "about-06", "case-01", "case-02", "contact", "facility-hero", "gir-feature", "gir-hero", "hero-01", "hero-02", "hero-03", "note-01", "note-02", "note-03", "note-04", "pkg-craft", "pkg-full", "pkg-mid", "proof-01", "proof-02", "proof-03", "proof-04", "proof-05", "proof-06", "strain-bbp", "strain-capjunky", "strain-fkm", "strain-gmo", "strain-mccp", "strain-moonbeam"]);
+function fillPlaceholders(root=document){
+  root.querySelectorAll('img[data-slot]').forEach(img=>{ if(img.getAttribute('src')) return; const key=img.dataset.slot.split(' ·')[0].trim(); if(HAVE.has(key)){ img.src='images/'+key+'.jpg'; img.loading='lazy'; } else img.src = placeholder(img.dataset.slot); });
+}
+
+/* ==========================================================
+   RENDER dynamic content
+   ========================================================== */
+const esc = s => s.replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+function noteCard(n){
+  return `<a class="note" href="#beehive/${n.id}">
+    <div class="frame r32"><img class="photo" data-slot="${esc(n.slot)}" alt=""></div>
+    <div class="body"><div class="meta">${n.topic} · ${n.date} · ${n.read} read</div><h3>${n.title}</h3><p>${n.dek}</p></div></a>`;
+}
+document.getElementById('homeNotes').innerHTML = NOTES.slice(0,3).map(noteCard).join('');
+document.getElementById('homePosts').innerHTML = POSTS.slice(0,6).map(postTile).join('');
+document.getElementById('allPosts').innerHTML = POSTS.map(postTile).join('');
+
+const topicsEl = document.getElementById('topics'), allNotesEl = document.getElementById('allNotes');
+const topics = ['All', ...new Set(NOTES.map(n=>n.topic))];
+topicsEl.innerHTML = topics.map((t,i)=>`<button type="button" class="${i?'':'on'}" data-topic="${t}">${t}</button>`).join('');
+function renderNotes(topic='All'){
+  allNotesEl.innerHTML = NOTES.filter(n=>topic==='All'||n.topic===topic).map(noteCard).join('');
+  fillPlaceholders(allNotesEl);
+}
+renderNotes();
+topicsEl.addEventListener('click',e=>{ const b=e.target.closest('button'); if(!b) return; topicsEl.querySelectorAll('button').forEach(x=>x.classList.toggle('on',x===b)); renderNotes(b.dataset.topic); });
+
+document.getElementById('qaTeaser').innerHTML = QA.slice(0,2).map((x,i)=>`<details ${i===0?'open':''}><summary>${x.q}<i></i></summary><div class="a">${x.a}<div class="who">Asked by ${x.who}</div></div></details>`).join('');
+document.getElementById('qaList').innerHTML = QA.map((x,i)=>`<details ${i===0?'open':''}><summary>${x.q}<i></i></summary><div class="a">${x.a}<div class="who">Asked by ${x.who}</div></div></details>`).join('');
+
+document.getElementById('strains').innerHTML = STRAINS.map((s,i)=>`
+<div class="strain" id="strain-${i}">
+  <div class="inner">
+    <div class="face front">
+      <span class="badge">AVAILABLE AS SEED</span><span class="badge tc">TC VERIFIED</span>
+      <div class="frame"><img class="photo" data-slot="${esc(s.slot)}" alt="${esc(s.name)}"></div>
+      <div class="body"><h3>${s.name}</h3><span class="thc">${s.thc==='Confirm'?'THC TBC':s.thc+' THC'}</span></div>
+      <button class="flipbtn" type="button" data-flip="${i}" style="padding:0 22px 20px">Profile</button>
+    </div>
+    <div class="face back">
+      <h3>${s.name}</h3>
+      <dl><dt>THC</dt><dd>${s.thc}</dd><dt>Terpenes</dt><dd>${s.terps}</dd><dt>Lineage</dt><dd>${s.lineage}</dd><dt>Flower</dt><dd>${s.flower}</dd><dt>Yield</dt><dd>${s.yield}</dd><dt>Nose</dt><dd>${s.nose}</dd></dl>
+      <span class="badge" style="margin-top:22px">AVAILABLE AS SEED · NATIONWIDE</span>
+      <button class="flipbtn" type="button" data-flip="${i}">Back to photo</button>
+    </div>
+  </div>
+</div>`).join('');
+document.getElementById('strains').addEventListener('click',e=>{ const b=e.target.closest('[data-flip]'); if(!b) return; document.getElementById('strain-'+b.dataset.flip).classList.toggle('flip'); });
+
+fillPlaceholders();
+
+/* ==========================================================
+   DESIGN SHEETS — files live in images/designs/. Add a sheet by adding a line.
+   ========================================================== */
+const lb=document.getElementById('lightbox'), lbImg=document.getElementById('lbImg'), lbCap=document.getElementById('lbCap');
+const sheetList=document.getElementById('sheetList'), sheetImg=document.getElementById('sheetImg');
+let curSheet=0;
+sheetList.innerHTML=SHEETS.map((x,i)=>`<button type="button" role="tab" class="${i?'':'on'}" data-i="${i}"><b>${x.id}</b><span>${x.title}</span></button>`).join('');
+function showSheet(i){ curSheet=i; const x=SHEETS[i]; sheetImg.src=`images/designs/${x.id}.jpg`; sheetImg.alt=x.title; document.getElementById('sheetTitle').textContent=`${x.id} — ${x.title}`; document.getElementById('sheetDesc').textContent=x.desc; [...sheetList.children].forEach((b,k)=>b.classList.toggle('on',k===i)); }
+sheetList.addEventListener('click',e=>{ const b=e.target.closest('button'); if(b) showSheet(+b.dataset.i); });
+showSheet(0);
+document.getElementById('sheetOpen').addEventListener('click',()=>openSheetLb(curSheet));
+document.addEventListener('click',e=>{ const b=e.target.closest('[data-sheet]'); if(!b) return; openSheetLb(SHEETS.findIndex(x=>x.id===b.dataset.sheet)); });
+let lbSheet=-1;
+function openSheetLb(i){ lbSheet=i; const x=SHEETS[i]; lbImg.src=`images/designs/${x.id}.jpg`; lbImg.alt=x.title; lbCap.textContent=`${x.id} — ${x.title}  ·  ${i+1} / ${SHEETS.length}`; lbPrev.hidden=lbNext.hidden=false; lb.classList.add('show'); document.body.classList.add('locked'); }
+const lbPrev=document.getElementById('lbPrev'), lbNext=document.getElementById('lbNext');
+lbPrev.addEventListener('click',()=>openSheetLb((lbSheet-1+SHEETS.length)%SHEETS.length));
+lbNext.addEventListener('click',()=>openSheetLb((lbSheet+1)%SHEETS.length));
+document.addEventListener('keydown',e=>{ if(!lb.classList.contains('show')||lbSheet<0) return; if(e.key==='ArrowLeft') lbPrev.click(); if(e.key==='ArrowRight') lbNext.click(); });
+
+/* ==========================================================
+   ROUTER — pages live in one file; the URL hash picks the page
+   ========================================================== */
+const pages = [...document.querySelectorAll('.page')];
+const navLinks = [...document.querySelectorAll('[data-nav]')];
+function route(){
+  const raw = location.hash.replace(/^#/,'') || 'home';
+  const [seg, sub] = raw.split('/');
+  // anchors inside the Work page (#work-home etc.)
+  let pageName = seg, anchor = null;
+  if(seg.startsWith('work-')){ pageName='work'; anchor=seg; }
+  if(!pages.some(p=>p.dataset.page===pageName)) pageName='404';
+  pages.forEach(p=>p.classList.toggle('active',p.dataset.page===pageName));
+  navLinks.forEach(a=>a.classList.toggle('on',a.dataset.nav===pageName));
+  closeNav();
+  if(pageName==='beehive') showArticle(sub);
+  document.title = titleFor(pageName) + ' — Honey Harvest Solutions';
+  if(anchor){ const el=document.getElementById(anchor); if(el) el.scrollIntoView({behavior:'smooth',block:'start'}); }
+  else window.scrollTo({top:0,behavior:'auto'});
+  requestAnimationFrame(reveal);
+}
+function titleFor(p){ return {home:'Your Growth. Our Craft.',work:'Work With Us',facility:'Facility Design — Concept to Canopy',gir:'Grower in Residence',menu:'The Menu',genetics:'Genetics',beehive:'The Beehive',ask:'Ask a Grower',about:'About & Proof',contact:'Contact',legal:'Legal','404':'Not found'}[p]||''; }
+window.addEventListener('hashchange',route);
+
+/* article reader */
+function showArticle(id){
+  const list=document.getElementById('beehiveList'), reader=document.getElementById('beehiveReader');
+  const n = NOTES.find(x=>x.id===id);
+  if(!n){ list.hidden=false; reader.hidden=true; return; }
+  list.hidden=true; reader.hidden=false;
+  document.getElementById('articleBody').innerHTML = `
+    <a class="back" href="#beehive"><span style="display:inline-block;width:22px;height:1px;background:currentColor"></span>All field notes</a>
+    <div class="meta">${n.topic} · ${n.date} · ${n.read} read · Tyler King</div>
+    <h1>${n.title}</h1>
+    <p class="lede">${n.dek}</p>
+    <div class="frame r32"><img class="photo" data-slot="${esc(n.slot)}" alt=""></div>
+    ${n.body}
+    <div class="rule" style="margin:48px 0 28px"></div>
+    <p style="font-family:var(--serif);font-size:24px;color:var(--cream)">Want the next one in your inbox? <a href="#contact" class="gold">Subscribe</a> — or <a href="#ask" class="gold">ask a question</a> of your own.</p>`;
+  fillPlaceholders(reader);
+}
+
+/* ==========================================================
+   NAV
+   ========================================================== */
+const header=document.getElementById('header'), burger=document.getElementById('burger'), nav=document.getElementById('nav');
+burger.addEventListener('click',()=>{ const open=nav.classList.toggle('open'); burger.setAttribute('aria-expanded',open); document.body.classList.toggle('locked',open); });
+function closeNav(){ nav.classList.remove('open'); burger.setAttribute('aria-expanded','false'); document.body.classList.remove('locked'); }
+nav.addEventListener('click',e=>{ if(e.target.closest('a')) closeNav(); });
+const totop=document.getElementById('totop');
+window.addEventListener('scroll',()=>{ const y=window.scrollY; header.classList.toggle('solid',y>40); totop.classList.toggle('show',y>900); },{passive:true});
+totop.addEventListener('click',()=>window.scrollTo({top:0,behavior:'smooth'}));
+
+/* pre-select contact subject from buttons with data-subject */
+document.addEventListener('click',e=>{
+  const a=e.target.closest('[data-subject]'); if(!a) return;
+  const sel=document.getElementById('contactSubject'); const want=a.dataset.subject;
+  let match=[...sel.options].find(o=>o.text===want)||[...sel.options].find(o=>o.text.startsWith(want.split(' — ')[0]));
+  if(match) sel.value=match.text;
+});
+
+/* ==========================================================
+   HERO SLIDESHOW
+   ========================================================== */
+(function(){
+  const slides=[...document.querySelectorAll('.hero .slides .photo')], dots=document.getElementById('heroDots');
+  if(!slides.length) return;
+  let i=0, timer;
+  dots.innerHTML=slides.map((_,k)=>`<button type="button" aria-label="Slide ${k+1}" ${k?'':'aria-current="true"'}></button>`).join('');
+  const go=k=>{ slides[i].classList.remove('show'); dots.children[i].removeAttribute('aria-current'); i=(k+slides.length)%slides.length; slides[i].classList.add('show'); dots.children[i].setAttribute('aria-current','true'); };
+  const start=()=>{ clearInterval(timer); if(!matchMedia('(prefers-reduced-motion: reduce)').matches) timer=setInterval(()=>go(i+1),7000); };
+  dots.addEventListener('click',e=>{ const b=e.target.closest('button'); if(!b) return; go([...dots.children].indexOf(b)); start(); });
+  start();
+})();
+
+/* ==========================================================
+   REVEAL + COUNTERS (single soft pass per element)
+   ========================================================== */
+const io = new IntersectionObserver(entries=>{
+  entries.forEach(en=>{ if(en.isIntersecting){ en.target.classList.add('in'); io.unobserve(en.target); } });
+},{threshold:.12});
+function reveal(){ document.querySelectorAll('.page.active .rv:not(.in), .page.active .stats:not(.in)').forEach(el=>io.observe(el)); }
+const cio = new IntersectionObserver(entries=>{
+  entries.forEach(en=>{ if(!en.isIntersecting) return; cio.unobserve(en.target);
+    const el=en.target, end=+el.dataset.count, reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if(reduce){ el.textContent=end; return; }
+    const t0=performance.now(), dur=1400;
+    (function tick(t){ const p=Math.min(1,(t-t0)/dur), e=1-Math.pow(1-p,3); el.textContent=Math.round(end*e); if(p<1) requestAnimationFrame(tick); })(t0);
+  });
+},{threshold:.5});
+document.querySelectorAll('[data-count]').forEach(el=>cio.observe(el));
+
+/* ==========================================================
+   LIGHTBOX
+   ========================================================== */
+document.addEventListener('click',e=>{
+  const b=e.target.closest('[data-lb]'); if(!b) return;
+  const img=b.querySelector('img'); lbImg.src=img.currentSrc||img.src; lbImg.alt=img.alt; lbCap.textContent=b.dataset.cap||''; lbSheet=-1; lbPrev.hidden=lbNext.hidden=true; lb.classList.add('show'); document.body.classList.add('locked');
+});
+function closeLb(){ lb.classList.remove('show'); document.body.classList.remove('locked'); }
+document.getElementById('lbClose').addEventListener('click',closeLb);
+lb.addEventListener('click',e=>{ if(e.target===lb) closeLb(); });
+document.addEventListener('keydown',e=>{ if(e.key==='Escape'){ closeLb(); document.getElementById('modal').classList.remove('show'); closeNav(); } });
+document.getElementById('modalClose').addEventListener('click',()=>document.getElementById('modal').classList.remove('show'));
+
+/* ==========================================================
+   FORMS — front-end only. To make them actually deliver, connect a
+   form service (Formspree, Basin, Netlify Forms, ConvertKit, etc.)
+   inside sendForm() below. Until then, submissions open a pre-filled
+   email to info@honeyharvestsolutions.com as a safe fallback.
+   ========================================================== */
+const toast=document.getElementById('toast'); let toastT;
+function showToast(msg){ toast.textContent=msg; toast.classList.add('show'); clearTimeout(toastT); toastT=setTimeout(()=>toast.classList.remove('show'),3200); }
+async function sendForm(kind,data,form){
+  /* Netlify Forms: works automatically once the site is hosted on Netlify.
+     Anywhere else, falls back to opening a pre-filled email. */
+  try{
+    if(location.protocol.startsWith('http')){
+      const body=new URLSearchParams(new FormData(form)).toString();
+      const r=await fetch('/',{method:'POST',headers:{'Content-Type':'application/x-www-form-urlencoded'},body});
+      if(r.ok) return true;
+    }
+  }catch(e){}
+  const subj=encodeURIComponent({subscribe:'Email list signup',clones:'Clone waitlist (MN)',ask:'Ask a Grower question',contact:(data.subject||'Website inquiry')}[kind]);
+  const body=encodeURIComponent(Object.entries(data).filter(([k])=>!['form-name','website'].includes(k)).map(([k,v])=>`${k}: ${v}`).join('\n'));
+  window.location.href=`mailto:tylerking@honeyharvestsolutions.com?subject=${subj}&body=${body}`;
+  return true;
+}
+document.querySelectorAll('form[data-form]').forEach(f=>{
+  f.addEventListener('submit',async e=>{
+    e.preventDefault();
+    const req=[...f.querySelectorAll('[required]')].filter(i=>!i.value.trim()||(i.type==='email'&&!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(i.value)));
+    if(req.length){ req[0].focus(); req[0].style.borderColor='#c0392b'; showToast(req[0].type==='email'?'Enter a valid email address.':'Fill in the highlighted field.'); req[0].addEventListener('input',()=>req[0].style.borderColor='',{once:true}); return; }
+    const btn=f.querySelector('[type=submit]'); btn.disabled=true;
+    const data=Object.fromEntries(new FormData(f).entries());
+    const ok=await sendForm(f.dataset.form,data,f);
+    btn.disabled=false;
+    if(ok){ f.classList.add('sent'); showToast({subscribe:'Subscribed.',clones:'Added to the waitlist.',ask:'Question sent.',contact:'Message sent.'}[f.dataset.form]); }
+    else showToast('Something went wrong. Email info@honeyharvestsolutions.com directly.');
+  });
+});
+
+/* ==========================================================
+   AGE GATE + COOKIE — in-memory only (no localStorage), so they
+   show once per page load.
+   ========================================================== */
+const gate=document.getElementById('gate'), cookie=document.getElementById('cookie');
+document.body.classList.add('locked');
+document.getElementById('gateYes').addEventListener('click',()=>{ gate.classList.add('off'); document.body.classList.remove('locked'); setTimeout(()=>cookie.classList.add('show'),900); });
+document.getElementById('gateNo').addEventListener('click',()=>gate.classList.add('denied'));
+cookie.addEventListener('click',e=>{ const b=e.target.closest('[data-cookie]'); if(!b) return; cookie.classList.remove('show'); window.__consent=b.dataset.cookie; });
+
+document.getElementById('year').textContent=new Date().getFullYear();
+route();
+</script>
+</body>
+</html>
