@@ -258,6 +258,7 @@ p{max-width:64ch}
 .ig-grid a:hover::after{opacity:1}
 .ig-grid span{position:absolute;left:12px;right:12px;bottom:10px;z-index:1;font-size:12.5px;color:var(--cream);opacity:0;transition:opacity .3s;line-height:1.3}
 .ig-grid a:hover span{opacity:1}
+.ig-grid .vid{position:absolute;top:10px;right:10px;width:0;height:0;border-left:11px solid rgba(242,236,221,.9);border-top:7px solid transparent;border-bottom:7px solid transparent;filter:drop-shadow(0 1px 3px rgba(0,0,0,.6))}
 @media (max-width:900px){.ig-grid{grid-template-columns:repeat(3,1fr)}.ig-grid span{display:none}}
 .channels{display:flex;gap:12px;flex-wrap:wrap;margin-top:32px}
 .chan{display:flex;align-items:center;gap:14px;padding:14px 20px 14px 16px;border:1px solid var(--line);background:var(--ink-2);transition:border-color .3s,background .3s}
@@ -1559,6 +1560,16 @@ function noteCard(n){
 document.getElementById('homeNotes').innerHTML = NOTES.slice(0,3).map(noteCard).join('');
 document.getElementById('homePosts').innerHTML = POSTS.slice(0,6).map(postTile).join('');
 document.getElementById('allPosts').innerHTML = POSTS.map(postTile).join('');
+/* LIVE INSTAGRAM — pulled from Behold (feeds.behold.so). If the feed can't load,
+   the static POSTS tiles above stay. To change the account, change the feed in Behold. */
+const IG_FEED='https://feeds.behold.so/DAi4cAaw1SCrD4kTRwaC';
+fetch(IG_FEED).then(r=>r.ok?r.json():null).then(j=>{
+  if(!j||!Array.isArray(j.posts)||!j.posts.length) return;
+  const live=j.posts.map(p=>({url:p.permalink||IG_URL,img:(p.sizes&&p.sizes.medium&&p.sizes.medium.mediaUrl)||p.thumbnailUrl||p.mediaUrl,cap:(p.prunedCaption||p.caption||'').replace(/\s+/g,' ').slice(0,90),video:p.mediaType==='VIDEO'}));
+  const tile=p=>`<a href="${esc(p.url)}" target="_blank" rel="noopener" aria-label="${esc(p.cap)||'Instagram post'}"><img src="${esc(p.img)}" loading="lazy" alt="">${p.video?'<i class="vid"></i>':''}<span>${esc(p.cap)}</span></a>`;
+  document.getElementById('homePosts').innerHTML=live.slice(0,6).map(tile).join('');
+  document.getElementById('allPosts').innerHTML=live.slice(0,12).map(tile).join('');
+}).catch(()=>{});
 
 const topicsEl = document.getElementById('topics'), allNotesEl = document.getElementById('allNotes');
 const topics = ['All', ...new Set(NOTES.map(n=>n.topic))];
