@@ -395,6 +395,17 @@ p{max-width:64ch}
 .offer-row li{display:flex;gap:12px}.offer-row li::before{content:"";width:8px;height:9px;flex:none;margin-top:9px;background:var(--gold);clip-path:polygon(50% 0,100% 25%,100% 75%,50% 100%,0 75%,0 25%)}
 @media (max-width:800px){.offer-row{grid-template-columns:1fr}}
 
+/* home grow tiers */
+.hg-tiers{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:22px}
+.hg{border:1px solid var(--line-soft);background:var(--ink-2);padding:22px 20px;display:flex;flex-direction:column;gap:6px}
+.hg.featured{border-color:rgba(217,180,90,.55)}
+.hg-name{font-family:var(--serif);font-size:26px;line-height:1}
+.hg-price{font-family:var(--serif);font-size:34px;color:var(--gold);line-height:1.1}
+.hg-for{font-size:13.5px;color:var(--mute);margin-bottom:8px}
+.hg ul{list-style:none;margin:0 0 18px;display:grid;gap:6px;font-size:14px;color:var(--cream-2)}
+.hg li::before{content:"— ";color:var(--gold-deep)}
+.hg .btn{margin-top:auto;align-self:flex-start;padding:12px 18px;font-size:14px}
+@media (max-width:760px){.hg-tiers{grid-template-columns:1fr}}
 /* design packages */
 .pkgs{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
 .pkg{border:1px solid var(--line-soft);background:var(--ink-2);display:flex;flex-direction:column;transition:border-color .35s}
@@ -672,7 +683,7 @@ p{max-width:64ch}
         <a href="#work-home">
           <div class="ic"><svg viewBox="0 0 40 40"><path d="M6 20L20 8l14 12"/><path d="M10 17v16h20V17"/><path d="M20 33V24"/><path d="M16 24c0-3 2-5 4-6 2 1 4 3 4 6"/></svg></div>
           <h3>Home Grow <em>Design</em></h3>
-          <p>A flat-rate setup design for home and new growers. The right gear, layout, environment, and plan — sized to your space and budget.</p>
+          <p>Setup design for home and new growers from $99. The right gear, layout, environment, and plan — sized to your space and budget.</p>
           <span class="go">Design my home grow</span>
         </a>
         <a href="#genetics">
@@ -847,17 +858,29 @@ p{max-width:64ch}
     <div class="offer-row rv" id="work-home">
       <div>
         <h3>Home Grow <em>Design</em></h3>
-        <div class="who">Flat rate · home and new growers · nationwide</div>
+        <div class="who">From $99 · home and new growers · nationwide</div>
       </div>
       <div class="body">
         <p>New legal markets are opening all over the country, and most people's first grow is a pile of forum advice and a cart full of the wrong gear. This fixes that.</p>
         <p>Send us your space, budget, and goal. You get a complete, productized setup design: the tent or room layout, lighting, environment control, medium and feed plan, a shopping list that isn't padded, and a first-run schedule — in language a first-timer can follow.</p>
-        <ul>
-          <li>One flat rate, one clear deliverable, delivered within a week</li>
-          <li>Sized for closets, tents, spare rooms, and small garages</li>
-          <li>Built on the same principles we use at commercial scale, scaled down honestly</li>
-        </ul>
-        <a href="#contact" class="btn btn-gold" data-subject="Home Grow Design">Start a home grow design</a>
+        <div class="hg-tiers">
+          <div class="hg">
+            <div class="hg-name">Starter</div><div class="hg-price">$99</div><div class="hg-for">Tent or closet · 1–2 plants</div>
+            <ul><li>Layout + gear list, no padding</li><li>Environment targets by stage</li><li>Feed plan + first-run calendar</li><li>One round of questions by email</li></ul>
+            <a href="#contact" class="btn btn-line" data-subject="Home Grow Design">Start with Starter</a>
+          </div>
+          <div class="hg featured">
+            <div class="hg-name">Room</div><div class="hg-price">$299</div><div class="hg-for">Spare room or garage bay · 4–12 plants</div>
+            <ul><li>Everything in Starter</li><li>Lighting + airflow drawing</li><li>Dehumidifier / AC sizing</li><li>30-minute call</li></ul>
+            <a href="#contact" class="btn btn-gold" data-subject="Home Grow Design">Start with Room</a>
+          </div>
+          <div class="hg">
+            <div class="hg-name">Pro Home</div><div class="hg-price">Custom</div><div class="hg-for">Perpetual setup, two spaces · 12+ plants</div>
+            <ul><li>Everything in Room</li><li>Veg + flower cadence plan</li><li>Fertigation / automation spec</li><li>Two calls + first-harvest check-in</li></ul>
+            <a href="#contact" class="btn btn-line" data-subject="Home Grow Design">Ask for a quote</a>
+          </div>
+        </div>
+        <p class="small" style="margin-top:16px">Delivered within a week. Built on the same principles we run at commercial scale, scaled down honestly. Vendor starter kits coming soon.</p>
       </div>
     </div>
 
