@@ -1281,7 +1281,7 @@ p{max-width:64ch}
           <label class="hide-on-sent">Email address<input type="email" name="email" placeholder="you@yourgrow.com" required autocomplete="email"></label>
           <button class="btn btn-gold hide-on-sent" type="submit">Subscribe</button>
           <p class="fine hide-on-sent">21+ only. Your address is never shared.</p>
-          <div class="ok">You're on the list.</div>
+          <div class="ok">Check your inbox — one click to confirm and you're on the list.</div>
         </form>
       </div>
     </div>
@@ -1737,7 +1737,16 @@ document.getElementById('modalClose').addEventListener('click',()=>document.getE
    ========================================================== */
 const toast=document.getElementById('toast'); let toastT;
 function showToast(msg){ toast.textContent=msg; toast.classList.add('show'); clearTimeout(toastT); toastT=setTimeout(()=>toast.classList.remove('show'),3200); }
+/* EMAIL LIST — MailerLite form "Field Notes". Subscribers land in MailerLite
+   (double opt-in email goes out automatically). A copy also lands in Netlify Forms. */
+const ML_FORM='https://dashboard.mailerlite.com/jsonp/2825730/forms/205163480964138336/subscribe';
 async function sendForm(kind,data,form){
+  if(kind==='subscribe'&&data.email){
+    try{
+      const fd=new FormData(); fd.append('fields[email]',data.email); fd.append('ml-submit','1'); fd.append('anticsrf','true');
+      await fetch(ML_FORM,{method:'POST',body:fd,mode:'no-cors'});
+    }catch(e){}
+  }
   /* Netlify Forms: works automatically once the site is hosted on Netlify.
      Anywhere else, falls back to opening a pre-filled email. */
   try{
