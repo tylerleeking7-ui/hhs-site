@@ -45,3 +45,8 @@ Replace the file in `images/` using the same name. Done.
 - Genetics figures marked "Confirm".
 - Legal page text.
 - Instagram tiles currently use site photos and link to the profile until real post links are added.
+
+## Lead magnet
+`downloads/hhs-home-grow-checklist.pdf` is the free download offered on the email-list band.
+Rebuild it after editing `downloads/build_checklist.py`: `python3 downloads/build_checklist.py`
+(needs `pip install weasyprint`). The welcome email in MailerLite links to the same file.
