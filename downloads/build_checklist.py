@@ -39,7 +39,7 @@ td:first-child {{ color:#f4efe4; font-weight:500 }}
 
 <div class="top"><div><div class="kicker">Free download · Honey Harvest Solutions</div>
 <h1>The Home Grow Room Checklist</h1>
-<p class="lede">Everything a first grow needs, in the order you need it — from the rules check to the cure jar. Print it, tape it to the tent, check it off.</p></div>
+<p class="lede">Everything a first grow needs, in the order you need it, from the rules check to the cure jar. Print it, tape it to the tent, check it off.</p></div>
 <img src="file://{LOGO}"></div>
 
 <div class="sec"><h2><small>Step 1</small>Before you buy anything</h2>
@@ -53,17 +53,17 @@ td:first-child {{ color:#f4efe4; font-weight:500 }}
 
 <div class="sec"><h2><small>Step 2</small>The build list</h2>
 <ul>{box([
- "<b>Tent</b> — 2×4 ft (1–2 plants) or 4×4 ft (3–4). Light-tight, ducting ports.",
- "<b>Light</b> — full-spectrum white LED bar/board with a dimmer. 30–40 true W per sq ft (2×4 → 240–320 W).",
- "<b>Exhaust fan + carbon filter</b> — 4\" for a 2×4, 6\" for a 4×4. Speed control.",
- "<b>Clip fan</b> — one small oscillating fan for air movement inside.",
- "<b>Fabric pots</b> — 3–5 gal, one per plant, with saucers.",
- "<b>Medium</b> — quality potting mix (first grow) or coco coir (second grow).",
+ "<b>Tent</b>, 2×4 ft (1–2 plants) or 4×4 ft (3–4). Light-tight, ducting ports.",
+ "<b>Light</b>, full-spectrum white LED bar/board with a dimmer. 30–40 true W per sq ft (2×4 → 240–320 W).",
+ "<b>Exhaust fan + carbon filter</b>, 4\" for a 2×4, 6\" for a 4×4. Speed control.",
+ "<b>Clip fan</b>, one small oscillating fan for air movement inside.",
+ "<b>Fabric pots</b>, 3–5 gal, one per plant, with saucers.",
+ "<b>Medium</b>, quality potting mix (first grow) or coco coir (second grow).",
  "<b>pH pen</b> + calibration solution.",
- "<b>Thermometer/hygrometer</b> with min/max memory — hang it at canopy height.",
+ "<b>Thermometer/hygrometer</b> with min/max memory, hang it at canopy height.",
  "<b>Outlet timer</b> for the light.",
- "<b>Nutrients</b> — a simple 2-part veg/bloom line, plus cal-mag if you run coco.",
- "<b>Feminized seeds</b> — photoperiod for your first run.",
+ "<b>Nutrients</b>, a simple 2-part veg/bloom line, plus cal-mag if you run coco.",
+ "<b>Feminized seeds</b>, photoperiod for your first run.",
  "<b>Jeweler's loupe</b> (30–60×) for reading trichomes at harvest.",
  "<b>Extras worth it:</b> rope ratchets, a watering can with a narrow spout, trellis net, 62% humidity packs for the cure.",
  "<b>Skip for now:</b> CO₂, hydro systems, controllers, no-name \"kits.\"",
@@ -77,10 +77,10 @@ td:first-child {{ color:#f4efe4; font-weight:500 }}
 <table><colgroup><col style='width:15%'><col style='width:12%'><col style='width:13%'><col style='width:11%'><col style='width:19%'><col style='width:30%'></colgroup><tr><th>Stage</th><th>Light schedule</th><th>Temp (lights on)</th><th>Humidity</th><th>Light power / height</th><th>Water &amp; feed</th></tr>
 <tr><td>Seedling (wk 1–2)</td><td>18 on / 6 off</td><td>75–80°F</td><td>65–75%</td><td>40–50% · 18–24" above</td><td>Light sips around the stem. No feed in soil; ¼ strength in coco.</td></tr>
 <tr><td>Veg (wk 3–6)</td><td>18 on / 6 off</td><td>75–82°F</td><td>55–65%</td><td>60–80% · 18" above</td><td>Water to 10–20% runoff when the pot is light. Veg feed, ½ → full.</td></tr>
-<tr><td>Flower, stretch (wk 1–3)</td><td>12 on / 12 off</td><td>72–78°F</td><td>50–55%</td><td>80–100% · 12–18" above</td><td>Switch to bloom feed. Plant may double in height — raise the light.</td></tr>
+<tr><td>Flower, stretch (wk 1–3)</td><td>12 on / 12 off</td><td>72–78°F</td><td>50–55%</td><td>80–100% · 12–18" above</td><td>Switch to bloom feed. Plant may double in height, raise the light.</td></tr>
 <tr><td>Flower, bulk (wk 4–6)</td><td>12 / 12</td><td>72–78°F</td><td>45–50%</td><td>100% · 12–18" above</td><td>Heaviest feeding. Check runoff EC; flush if it climbs well above input.</td></tr>
 <tr><td>Flower, ripen (wk 7+)</td><td>12 / 12</td><td>70–76°F</td><td>40–45%</td><td>100% · watch for bleaching</td><td>Taper feed. Plain water the last 7–10 days. Loupe the trichomes.</td></tr>
-<tr><td>Lights off (all stages)</td><td>—</td><td>Drop 5–10°F, no more</td><td>Watch the spike</td><td>—</td><td>Big temperature drops = condensation = mold.</td></tr>
+<tr><td>Lights off (all stages)</td><td>, </td><td>Drop 5–10°F, no more</td><td>Watch the spike</td><td>, </td><td>Big temperature drops = condensation = mold.</td></tr>
 </table>
 <p class="note"><b>pH:</b> 6.2–6.8 in soil, 5.8–6.2 in coco. <b>The watering rule:</b> lift the pot. Heavy = wait. Light = water to runoff, then dump the runoff.</p></div>
 
@@ -96,7 +96,7 @@ td:first-child {{ color:#f4efe4; font-weight:500 }}
 ])}</ul></div>
 <div class="sec"><h2><small>Step 5</small>Harvest, dry, cure</h2>
 <ul class="one">{box([
- "<b>Ready when:</b> trichomes mostly cloudy with a few amber under the loupe — not when the breeder's calendar says.",
+ "<b>Ready when:</b> trichomes mostly cloudy with a few amber under the loupe, not when the breeder's calendar says.",
  "<b>Harvest:</b> cut branches, strip the big fan leaves, hang whole. Leave sugar leaves on.",
  "<b>Dry:</b> 60°F / 60% RH, 10–14 days, dark, air moving in the room but never on the flower. Stems snap, not bend.",
  "<b>Trim:</b> after the dry, not before.",

@@ -1,12 +1,12 @@
-# Honey Harvest Solutions — website
+# Honey Harvest Solutions, website
 
 One page (`index.html`), one content file (`content.js`), one images folder. No build step.
 
 ## Files
 | File | What it is | Edit it? |
 |---|---|---|
-| `index.html` | The whole site — design, pages, logic | Rarely. Ask before changing. |
-| `content.js` | Field notes, Q&A, genetics, Instagram posts, design sheets | **Yes — this is where you add things.** |
+| `index.html` | The whole site, design, pages, logic | Rarely. Ask before changing. |
+| `content.js` | Field notes, Q&A, genetics, Instagram posts, design sheets | **Yes, this is where you add things.** |
 | `images/` | Photos (`hero-01.jpg` …), `images/designs/` sheets, `images/ig/` Instagram tiles | Add files here |
 | `netlify.toml` | Hosting settings | No |
 
@@ -27,7 +27,7 @@ One page (`index.html`), one content file (`content.js`), one images folder. No 
 *Want it automatic?* Connect a feed widget (Behold.so has a free tier) to the Instagram account and paste its embed in place of the `ig-grid` div. Ask and it's a 10-minute change.
 
 ## Answer a question / add a strain / add a design sheet
-Same idea — find `QA`, `STRAINS`, or `SHEETS` in `content.js` and add a block at the top.
+Same idea, find `QA`, `STRAINS`, or `SHEETS` in `content.js` and add a block at the top.
 
 ## Forms (contact, Ask a Grower, email list, clone waitlist)
 Hosted on Netlify, every form submission lands in **Netlify → Forms**, and you get an email per submission once you turn on notifications (Site settings → Forms → Form notifications → add tylerking@honeyharvestsolutions.com). No code involved.
@@ -41,7 +41,7 @@ Open the repo on GitHub → click `content.js` → pencil icon → edit → **Co
 Replace the file in `images/` using the same name. Done.
 
 ## Things still marked as placeholders
-- Partner logos (Facility Design page, home partner strip) — look for `PARTNER LOGO` in `index.html`.
+- Partner logos (Facility Design page, home partner strip), look for `PARTNER LOGO` in `index.html`.
 - Genetics figures marked "Confirm".
 - Legal page text.
 - Instagram tiles currently use site photos and link to the profile until real post links are added.
