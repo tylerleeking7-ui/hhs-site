@@ -1546,7 +1546,7 @@ function placeholder(label){
 </svg>`;
   return 'data:image/svg+xml;utf8,' + encodeURIComponent(svg);
 }
-const HAVE=new Set(["about-01", "about-02", "about-03", "about-04", "about-05", "about-06", "case-01", "case-02", "contact", "facility-hero", "gir-feature", "gir-hero", "hero-01", "hero-02", "hero-03", "note-01", "note-02", "note-03", "note-04", "pkg-craft", "pkg-full", "pkg-mid", "proof-01", "proof-02", "proof-03", "proof-04", "proof-05", "proof-06", "strain-bbp", "strain-capjunky", "strain-fkm", "strain-gmo", "strain-mccp", "strain-moonbeam"]);
+const HAVE=new Set(["about-01", "about-02", "about-03", "about-04", "about-05", "about-06", "case-01", "case-02", "contact", "facility-hero", "gir-feature", "gir-hero", "hero-01", "hero-02", "hero-03", "note-01", "note-02", "note-03", "note-04", "note-05", "pkg-craft", "pkg-full", "pkg-mid", "proof-01", "proof-02", "proof-03", "proof-04", "proof-05", "proof-06", "strain-bbp", "strain-capjunky", "strain-fkm", "strain-gmo", "strain-mccp", "strain-moonbeam"]);
 function fillPlaceholders(root=document){
   root.querySelectorAll('img[data-slot]').forEach(img=>{ if(img.getAttribute('src')) return; const key=img.dataset.slot.split(' ·')[0].trim(); if(HAVE.has(key)){ img.src='images/'+key+'.jpg'; img.loading='lazy'; } else img.src = placeholder(img.dataset.slot); });
 }
@@ -1593,12 +1593,12 @@ document.getElementById('strains').innerHTML = STRAINS.map((s,i)=>`
     <div class="face front">
       <span class="badge">AVAILABLE AS SEED</span><span class="badge tc">TC VERIFIED</span>
       <div class="frame"><img class="photo" data-slot="${esc(s.slot)}" alt="${esc(s.name)}"></div>
-      <div class="body"><h3>${s.name}</h3><span class="thc">${s.thc==='Confirm'?'THC TBC':s.thc+' THC'}</span></div>
+      <div class="body"><h3>${s.name}</h3><span class="thc">${s.thc==='Confirm'?'Lab results pending':s.thc+' THC'}</span></div>
       <button class="flipbtn" type="button" data-flip="${i}" style="padding:0 22px 20px">Profile</button>
     </div>
     <div class="face back">
       <h3>${s.name}</h3>
-      <dl><dt>THC</dt><dd>${s.thc}</dd><dt>Terpenes</dt><dd>${s.terps}</dd><dt>Lineage</dt><dd>${s.lineage}</dd><dt>Flower</dt><dd>${s.flower}</dd><dt>Yield</dt><dd>${s.yield}</dd><dt>Nose</dt><dd>${s.nose}</dd></dl>
+      <dl>${[['THC',s.thc],['Terpenes',s.terps],['Lineage',s.lineage],['Flower',s.flower],['Yield',s.yield],['Nose',s.nose]].filter(([k,v])=>v&&!/confirm/i.test(v)).map(([k,v])=>`<dt>${k}</dt><dd>${v}</dd>`).join('')}</dl>
       <span class="badge" style="margin-top:22px">AVAILABLE AS SEED · NATIONWIDE</span>
       <button class="flipbtn" type="button" data-flip="${i}">Back to photo</button>
     </div>

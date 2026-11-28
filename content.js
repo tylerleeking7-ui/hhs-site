@@ -17,6 +17,27 @@
    body:  HTML. Use <p>, <h3>, <ul><li>, <blockquote>. */
 const NOTES = [
   {
+    id:"avs-week-1-empty-building", topic:"Concept to Canopy", date:"November 2026", read:"5 min",
+    title:"Week 1: An empty building and a license.",
+    dek:"Concept to Canopy, from the beginning. How a bare shell in Minnesota became a room list, before anyone bought a single light.",
+    slot:"note-05 · A100 floor plan",
+    body:`
+<p>This is the first note in a series. We're designing a cultivation facility in Minnesota — AVS, New Operations, Phase 1 — and we're going to write it down as it happens: the decisions, the numbers, and the mistakes caught before they got built. If you grow in a tent, the thinking is the same at a different scale. If you're planning a building, this is the order to do it in.</p>
+<h3>What we walked into</h3>
+<p>A shell. Four exterior walls, a roof, a slab, and nothing else — no interior walls, no cultivation equipment, no plan that had survived contact with a harvest. The owners had a license application in motion, a square footage number, and the question everyone starts with: <em>what goes where?</em></p>
+<p>The temptation is to answer that question with a drawing. We didn't start there.</p>
+<h3>Start with the three numbers</h3>
+<ul><li><strong>The license.</strong> What the state actually lets this building grow — canopy limits, what counts as canopy, what has to be separated from what. In Minnesota that also set the security and camera requirements before we'd placed a single room.</li><li><strong>The square footage.</strong> Not the building's — the <em>cultivation</em> square footage after you subtract walls, aisles, mechanical, and the space people and plants need to move through. The building was roughly 76 by 48 feet. The canopy is a lot less than that.</li><li><strong>The needs of the business.</strong> How much product, how often, for which market. A harvest every two weeks is a different building than a harvest every two months, even at the same size.</li></ul>
+<blockquote>Canopy first. Then environment. Then the flow of plants and people through the building. The drawing comes last.</blockquote>
+<h3>Then the rooms, in plant order</h3>
+<p>Once those three numbers agree with each other, the rooms almost design themselves — as long as you go in the order a plant goes:</p>
+<ul><li><strong>Clone and mother.</strong> Small, but it feeds everything. Undersize it and the whole cadence slips.</li><li><strong>Veg.</strong> Sized to what flower needs every cycle, plus a margin for the plants you'll cull.</li><li><strong>Flower.</strong> The rooms that make money. Here that meant two flower rooms on a staggered schedule, so the building harvests twice as often as a single big room would.</li><li><strong>Dry.</strong> The room everyone forgets until there are a thousand wet plants with nowhere to hang. It got drawn in week one, not week ten.</li></ul>
+<p>That walk — clone to veg to flower to dry, each room sized by the one before it — slowly turned a square footage number into a room list. Then the logistics: where do plants enter, where does product leave, where does the water come in, where does the heat go out. We laid it out so the grow could <em>start</em> at the building rather than wait for the building to be finished.</p>
+<h3>Then the part nobody posts about</h3>
+<p>Winning the license. Budget. Equipment. The equipment alone is a three-month process — quotes, submittals, lead times, the back-and-forth with vendors who've never seen a cultivation room — and we'll get into that in the coming weeks. For now, the point of week one is that none of that could start until the rooms existed on paper and the three numbers lined up.</p>
+<p><strong>Next week:</strong> racking. How we decided to go up instead of out, and what that did to every other system in the building.</p>`
+  },
+  {
     id:"substrate-reset", topic:"Nutrition", date:"September 2026", read:"6 min",
     title:"The iron deficiency that wasn't an iron problem.",
     dek:"A facility-wide chlorosis event, what the tissue tests actually said, and the substrate reset that fixed it.",
@@ -115,7 +136,7 @@ const QA = [
 
 /* ---------- GENETICS ----------  thc/terps: use "Confirm" to show TBC */
 const STRAINS = [
-  {name:"Foreign Kush Mints", thc:"30%+", terps:"3%+", lineage:"Kush Mints × (confirm)", flower:"63–70 days", yield:"High", nose:"Mint, fuel, sweet earth", slot:"strain-fkm · macro, 900×1100"},
+  {name:"Foreign Kush Mints", thc:"30%+", terps:"3%+", lineage:"Kush Mints cross", flower:"63–70 days", yield:"High", nose:"Mint, fuel, sweet earth", slot:"strain-fkm · macro, 900×1100"},
   {name:"GMO", thc:"30%+", terps:"3%+", lineage:"Chemdog × GSC", flower:"70+ days", yield:"Very high", nose:"Garlic, diesel, funk", slot:"strain-gmo · macro, 900×1100"},
   {name:"Cap Junky", thc:"30%+", terps:"3%+", lineage:"Alien Cookies × Kush Mints", flower:"63–70 days", yield:"High", nose:"Sour fuel, sweet cream", slot:"strain-capjunky · macro, 900×1100"},
   {name:"Moonbeam Gelato", thc:"Confirm", terps:"Confirm", lineage:"Gelato cross (confirm)", flower:"63 days", yield:"Medium–high", nose:"Cream, citrus, berry", slot:"strain-moonbeam · macro, 900×1100"},
